@@ -1,0 +1,147 @@
+/* Common Styles */
+@font-face {
+    font-family: NeoSans;
+    src: url('../fonts/NeoSans-Bold.otf');
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #a5a5a5;
+    letter-spacing: normal;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.display-4,
+.h1,
+.h2,
+.card-title {
+    color: #000;
+    font-family: "NeoSans", sans-serif;
+}
+
+.font-xs {
+    font-size: 0.94rem;
+}
+
+.font-sm {
+    font-size: 1.125rem;
+}
+
+.font-md {
+    font-size: 1.31rem;
+}
+
+.font-lg {
+    font-size: 1.5rem;
+}
+
+/* h1.section-head-text {
+  font-size: 3.75rem;
+}
+
+h2.section-head-text {
+  font-size: 2.6rem;
+} */
+
+.bg-101 {
+    background-image: url(../img/101@2x.png);
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.green-bg {
+    background-color: #009944;
+}
+
+.principles-card img,
+.opensource-card img,
+.tech-stack img {
+    max-width: 132px;
+}
+
+.display-4 {
+    font-size: 3.75rem;
+}
+
+.neosans-font {
+    font-family: "NeoSans", sans-serif;
+}
+
+.rounded-button {
+    border-radius: 1.8rem;
+}
+
+.read-more-btn {
+    border-color: #009944;
+    padding: 0.62rem 3.12rem;
+}
+
+.read-more-btn:hover,
+.read-more-btn:active {
+    background-color: #009944;
+    color: #fff;
+}
+
+.text-green {
+    color: #009944;
+}
+
+.font-bold {
+    font-weight: 900;
+}
+
+.apply-btn,
+.apply-btn:hover,
+.apply-btn:active {
+    background: #8dc63f;
+    font-size: 1.5rem;
+    padding: 0.3rem 3.35rem;
+}
+.bg-green {
+    background-image: url(../img/green-brush.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer a,
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.text-opacity {
+    opacity: 0.5;
+}
+.apply-btn-sm,
+.apply-btn-sm:hover,
+.apply-btn-sm:active {
+    background: #8dc63f;
+    padding: .375rem 2rem
+}
+
+/* Header Styles */
+.navbar {
+    padding: .5rem 1.9rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #9a9a9a !important;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #8dc63f !important;
+}
+
+li.nav-item {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+li.list-inline-item a { 
+    letter-spacing: 1.3rem;
+    font-size: 1.3rem;
+}
+.copyright-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+}

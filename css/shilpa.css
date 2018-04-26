@@ -1,0 +1,52 @@
+
+.display-4 {
+  font-family: "NeoSans", sans-serif;
+  font-size: 3.75rem;
+}
+.neosans-font {
+	font-family: "NeoSans", sans-serif;
+}
+
+.rounded-button {
+	border-radius: 1.8rem;
+	border-color: #009944;
+	padding: 0.62rem 3.12rem;
+}
+.rounded-button:hover,
+.rounded-button:active {
+	background-color: #009944;
+	color: #fff;
+}
+
+.green-text {
+	color: #009944;
+}
+
+.font-bold {
+	font-weight: 900;
+}
+.apply-btn,
+.apply-btn:hover,
+.apply-btn:active {
+	background: #8dc63f;
+    font-size: 1.5rem;
+    padding: 0.3rem 3.35rem;
+}
+.bg-green {
+    background-image: url(../img/green-brush.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer a {
+	color: #fff;
+}
+.text-opacity {
+	opacity: 0.5;
+}
+footer .apply-btn,
+footer .apply-btn:hover,
+footer .apply-btn:active {
+	font-size: 1rem;
+    padding: 0.1rem 2.35rem;
+}
