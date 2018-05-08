@@ -1,7 +1,17 @@
 /* Common Styles */
 @font-face {
-    font-family: NeoSans;
+    font-family: NeoSansBold;
     src: url('../fonts/NeoSans-Bold.otf');
+}
+
+@font-face {
+    font-family: NeoSansLight;
+    src: url('../fonts/NeoSans-Light.otf');
+}
+
+@font-face {
+    font-family: NeoSans;
+    src: url('../fonts/NeoSans.otf');
 }
 
 body {
@@ -19,7 +29,7 @@ body {
 .h2,
 .card-title {
     color: #000;
-    font-family: "NeoSans", sans-serif;
+    font-family: "NeoSansBold", sans-serif;
 }
 
 .font-xs {
@@ -36,6 +46,10 @@ body {
 
 .font-lg {
     font-size: 1.5rem;
+}
+
+.font-xl {
+    font-size: 2.2rem;
 }
 
 /* h1.section-head-text {
@@ -57,7 +71,7 @@ h2.section-head-text {
     background-color: #009944;
 }
 
-.principles-card img,
+/*.principles-card img,*/
 .opensource-card img,
 .tech-stack img {
     max-width: 132px;
@@ -67,23 +81,23 @@ h2.section-head-text {
     font-size: 3.75rem;
 }
 
-.neosans-font {
+.neosans-bold {
+    font-family: "NeoSansBold", sans-serif;
+}
+
+.neosans-light {
+    font-family: "NeoSansLight", sans-serif;
+}
+
+.font-neosans {
     font-family: "NeoSans", sans-serif;
 }
 
-.rounded-button {
+.apply-btn {
     border-radius: 1.8rem;
 }
-
-.read-more-btn {
-    border-color: #009944;
-    padding: 0.62rem 3.12rem;
-}
-
-.read-more-btn:hover,
-.read-more-btn:active {
-    background-color: #009944;
-    color: #fff;
+.apply-btn:hover {
+    background-color: transparent;
 }
 
 .text-green {
@@ -94,17 +108,8 @@ h2.section-head-text {
     font-weight: 900;
 }
 
-.apply-btn,
-.apply-btn:hover,
-.apply-btn:active {
-    background: #8dc63f;
-    font-size: 1.5rem;
-    padding: 0.3rem 3.35rem;
-}
 .bg-green {
-    background-image: url(../img/green-brush.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #009944;
 }
 
 footer a,
@@ -114,12 +119,6 @@ footer a:hover {
 }
 .text-opacity {
     opacity: 0.5;
-}
-.apply-btn-sm,
-.apply-btn-sm:hover,
-.apply-btn-sm:active {
-    background: #8dc63f;
-    padding: .375rem 2rem
 }
 
 /* Header Styles */
@@ -144,4 +143,81 @@ li.list-inline-item a {
 .copyright-text {
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
+}
+
+/* Slider Styles*/
+#go-jek-slider .carousel-item .carousel-caption {
+    top: 20%;
+}
+
+#go-jek-slider .carousel-indicators {
+    top: 60%;
+}
+
+#go-jek-slider .carousel-btn {
+    top: 70%;
+    font-family: "NeoSansBold";
+}
+.carousel-btn .btn {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    letter-spacing: 1.5px;
+}
+
+#go-jek-slider .carousel-indicators li {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #fff;
+}
+#go-jek-slider .carousel-indicators li.active {
+    background-color: #009944;
+}
+.all-positions-btn {
+    border: 1px solid #fff;
+}
+
+/*Go-Jek facts*/
+.light-green-bg {
+    background-color: #8dc63f;
+}
+.dark-green-bg {
+    background-color: #040404;
+}
+.order-bg {
+    background-color: #086c35;
+}
+.gray-bg {
+    background-color: #f2f2f2;
+}
+.text-gray {
+    color: #686868;
+}
+
+/*Careers Page styles*/
+
+.background-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 37.2rem;
+}
+.careers-banner {
+    background-image: url(../img/careers-banner-1.png);
+    
+}
+.go-jek-work {
+    background-image: url(../img/go-jek-work.png);
+}
+.text-black {
+    color: #000;
+}
+.open-positions-card {
+    padding-bottom: 0;
+}
+.careers-banner-text { 
+    font-size: 3rem;
+}
+.opensource-card {
+    border-radius: 1rem;
 }

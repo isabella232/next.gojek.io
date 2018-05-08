@@ -1,52 +1,43 @@
-
-.display-4 {
-  font-family: "NeoSans", sans-serif;
-  font-size: 3.75rem;
+.slick-next {
+    right: 25px;
 }
-.neosans-font {
-	font-family: "NeoSans", sans-serif;
+.slick-prev {
+    left: 25px;
 }
 
-.rounded-button {
-	border-radius: 1.8rem;
-	border-color: #009944;
-	padding: 0.62rem 3.12rem;
+.tech-facts-slider .slick-slide {
+    margin: 0px 5px;
 }
-.rounded-button:hover,
-.rounded-button:active {
-	background-color: #009944;
-	color: #fff;
+/*.tech-facts-slider .slick-prev:before,
+.tech-facts-slider .slick-next:before {
+  color: #fff !important;
+}*/
+.slick-prev:before,
+.slick-next:before {
+  color: black;
 }
-
-.green-text {
-	color: #009944;
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+  margin: 0px 20px;
 }
-
-.font-bold {
-	font-weight: 900;
-}
-.apply-btn,
-.apply-btn:hover,
-.apply-btn:active {
-	background: #8dc63f;
-    font-size: 1.5rem;
-    padding: 0.3rem 3.35rem;
-}
-.bg-green {
-    background-image: url(../img/green-brush.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.slick-active,
+.slick-current {
+  opacity: 1;
 }
 
-footer a {
-	color: #fff;
+/*Careers page slider*/
+
+.go-jek-slider .slick-slide {
+    margin: 0px;
 }
-.text-opacity {
-	opacity: 0.5;
+
+.go-jek-slider .slick-active {
+	opacity: 0.2;
 }
-footer .apply-btn,
-footer .apply-btn:hover,
-footer .apply-btn:active {
-	font-size: 1rem;
-    padding: 0.1rem 2.35rem;
+.go-jek-slider .slick-current {
+	opacity: 1;
+}
+.slick-current {
+  opacity: 1;
 }
