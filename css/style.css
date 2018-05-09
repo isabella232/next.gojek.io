@@ -157,6 +157,7 @@ li.list-inline-item a {
 #go-jek-slider .carousel-btn {
     top: 70%;
     font-family: "NeoSansBold";
+    z-index: 99;
 }
 .carousel-btn .btn {
     padding-top: 1px;
