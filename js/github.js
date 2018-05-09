@@ -7,7 +7,7 @@
         // format: "json"
     })
         .done(function (data) {
-            var i = 10;
+            var x = 5;
             $.each(data, function (i, item) {
                 console.log(item);
                 $("#list").append(
@@ -22,13 +22,13 @@
                     '<div class=" col-sm-3">' +
                     '<p>'+  (item.language !== null ? '<i class ="fa fa-circle mr-2 blue-bullet"></i>'+ item.language : "") + '</p>' +    
                     '</div>'+
-                      (i <= 4 ? '<hr class="list-item-divider">': '') +  
+                      (i <= x-1 ? '<hr class="list-item-divider">': '') +  
                     // '<hr style="width:90%">'+
                     '</div>'
                     
                 );
                 
-                if (i ===5 ) {
+                if (i === x ) {
                     return false;
                 }
             });
