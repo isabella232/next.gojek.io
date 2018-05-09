@@ -1,29 +1,36 @@
-jQuery.githubUser = function(username, callback) {
-   jQuery.getJSON('https://api.github.com/users/'+username+'/repos?callback=?',callback)
-}
- 
-jQuery.fn.loadRepositories = function(username) {
-    this.html("<span>Querying GitHub for " + username +"'s repositories...</span>");
-     
-    var target = this;
-    $.githubUser(username, function(data) {
-        var repos = data.data; // JSON Parsing
-        console.log(repos)
-        sortByName(repos);    
-     
-        var list = $('<dl/>');
-        target.empty().append(list);
-        $(repos).each(function() {
-            if (this.name != (username.toLowerCase()+'.github.com')) {
-                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
-                list.append('<dd>' + this.description +'</dd>');
-            }
-        });      
-      });
-      
-    function sortByName(repos) {
-        repos.sort(function(a,b) {
-        return a.name - b.name;
-       });
-    }
-};
+
+(function () {
+    var gojeckAPI = "https://api.github.com/orgs/gojek-engineering/repos";
+    $.getJSON(gojeckAPI, {
+        // tags: "mount rainier",
+        // tagmode: "any",
+        // format: "json"
+    })
+        .done(function (data) {
+            var x = 5;
+            $.each(data, function (i, item) {
+                console.log(item);
+                $("#list").append(
+                    '<div  href="#" class="list-group-item list-group-item-action d-flex flex-row align-items-center list-3 flex-wrap">' +
+                    '<div class="col-2 col-sm-2 d-none d-sm-block">' +
+                    '<img class ="img-fluid" src="../img/sample-img-2.png" alt="Sample repository">' +
+                    '</div>' +
+                    '<div class="col-10 col-sm-7 mt-3">' +
+                    '<a class ="text-success neosans-bold font-lg" href = ' + item.html_url + ' target = _blank>' + item.name + '</a>' +
+                    '<p class="list-description font-xs">' +  (item.description !== null ? item.description : "") + '</p>' +
+                    '</div>' +
+                    '<div class=" col-sm-3">' +
+                    '<p>'+  (item.language !== null ? '<i class ="fa fa-circle mr-2 blue-bullet"></i>'+ item.language : "") + '</p>' +    
+                    '</div>'+
+                      (i <= x-1 ? '<hr class="list-item-divider">': '') +  
+                    // '<hr style="width:90%">'+
+                    '</div>'
+                    
+                );
+                
+                if (i === x ) {
+                    return false;
+                }
+            });
+        });
+})();
