@@ -221,3 +221,53 @@ li.list-inline-item a {
 .opensource-card {
     border-radius: 1rem;
 }
+
+/*blog Page styles Start*/
+.pl-b-5{
+    padding-left : 3rem ! important;
+}
+
+.pt-b-5{
+    padding-top: 5rem !important;
+}
+
+.list-3:hover{
+    background-color: #f2f2f2 !important;
+}
+
+.list-3{
+    background-color: #f2f2f2 !important;
+    border : none ;
+    /* border-bottom: 1px solid black; */
+}
+
+.list-Image{
+    height: 60px;
+    width: 60px;
+}
+
+.list-description{
+    width : 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space : nowrap;
+}
+
+.blue-bullet{
+    color : skyblue;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: .60rem;
+    border-top-right-radius: .60rem;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: .60rem;
+    border-bottom-right-radius: .60rem;
+}
+
+.list-item-divider{
+    width : 98%;
+}
+/*blog Page styles End*/
