@@ -14,6 +14,11 @@
     src: url('../fonts/NeoSans.otf');
 }
 
+@font-face {
+    font-family: NeoSansMedium;
+    src: url('../fonts/NeoSans-Medium.otf');
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #a5a5a5;
@@ -96,8 +101,8 @@ h2.section-head-text {
 .apply-btn {
     border-radius: 1.8rem;
 }
-.apply-btn:hover {
-    background-color: transparent;
+.apply-btn:hover,
+.apply-btn:focus {
 }
 
 .text-green {
@@ -176,6 +181,10 @@ li.list-inline-item a {
 }
 .all-positions-btn {
     border: 1px solid #fff;
+    background-color: transparent;
+}
+.all-positions-btn:hover {
+    background-color: transparent;
 }
 
 /*Go-Jek facts*/
@@ -221,4 +230,38 @@ li.list-inline-item a {
 }
 .opensource-card {
     border-radius: 1rem;
+}
+
+/*Employee Stories Carousel*/
+.employee-stories {
+    position: relative;
+}
+.main-carousel {
+    z-index: 99;
+}
+.background-carousel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.background-carousel .carousel {
+    background-color: #009944;
+}
+.background-carousel img {
+     visibility: hidden;
+}
+.carousel-head {
+    top: 0; 
+    padding-top: 0;
+}
+.emp-testimonial {
+    background-color: #000;
+    opacity: 0.5; 
+    right: 0; 
+    left: 50%;
+    bottom: 0;
+}
+.responsive-caption {
+    top: 0; 
+    padding-top: 0;
 }
