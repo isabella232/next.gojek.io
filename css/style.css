@@ -151,16 +151,18 @@ li.list-inline-item a {
 }
 
 /* Slider Styles*/
+
+
 #go-jek-slider .carousel-item .carousel-caption {
-    top: 20%;
+    top: 10%;
 }
 
 #go-jek-slider .carousel-indicators {
-    top: 60%;
+    top: 70%;
 }
 
 #go-jek-slider .carousel-btn {
-    top: 70%;
+    top: 75%;
     font-family: "NeoSansBold";
     z-index: 99;
 }
@@ -169,6 +171,8 @@ li.list-inline-item a {
     padding-bottom: 1px;
     letter-spacing: 1.5px;
 }
+
+
 
 #go-jek-slider .carousel-indicators li {
   width: 1rem;
@@ -291,7 +295,6 @@ li.list-inline-item a {
 }
 
 .list-description{
-    width : 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space : nowrap;
