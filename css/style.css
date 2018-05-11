@@ -270,12 +270,29 @@ li.list-inline-item a {
     bottom: 0;
    
 }
+
+@media only screen and (max-width: 600px) {
+    .emp-testimonial {
+        background-color:rgba(0, 0, 0, 0.4);
+        right: 0; 
+        top: 30%;
+        left: 40%;
+        bottom: 0;
+    }
+  
+}
+@media only screen and (max-width: 800px) {
+    .emp-testimonial {
+     font-size: 0.7rem;
+    }
+}
+
 .responsive-caption {
     top: 0; 
     padding-top: 0;
 }
 
-/*blog Page styles Start*/
+/*open source styles Start*/
 .pl-b-5{
     padding-left : 3rem ! important;
 }
@@ -322,20 +339,33 @@ li.list-inline-item a {
 .list-item-divider{
     width : 98%;
 }
-/*blog Page styles End*/
+/*open source styles End*/
 
-@media only screen and (max-width: 600px) {
-    .emp-testimonial {
-        background-color:rgba(0, 0, 0, 0.4);
-        right: 0; 
-        top: 30%;
-        left: 40%;
-        bottom: 0;
-    }
-  
+/* blog style start */
+em{
+    font-style: normal !important;
 }
-@media only screen and (max-width: 800px) {
-    .emp-testimonial {
-     font-size: 0.7rem;
-    }
+
+.blog-card-data{
+    font-family:"NeoSansBold", sans-serif !important ;
+    font-style: normal !important;
+    text-decoration: none !important;
 }
+
+ .card-link{
+    text-decoration: none !important;
+}
+
+em a,
+em a:hover,{
+
+    text-decoration: none !important;
+}
+
+/* em a:hover{
+    color: #009944 !important;
+    text-decoration: none !important;
+} */
+/* blog style end */
+
+
