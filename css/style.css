@@ -154,7 +154,8 @@ li.list-inline-item a {
 
 
 #go-jek-slider .carousel-item .carousel-caption {
-    top: 10%;
+    top: 30%;
+    right: 30%;
 }
 
 #go-jek-slider .carousel-indicators {
@@ -264,6 +265,7 @@ li.list-inline-item a {
     right: 0; 
     left: 50%;
     bottom: 0;
+   
 }
 .responsive-caption {
     top: 0; 
@@ -318,3 +320,15 @@ li.list-inline-item a {
     width : 98%;
 }
 /*blog Page styles End*/
+
+@media only screen and (max-width: 600px) {
+    .emp-testimonial {
+        background-color:rgba(0, 0, 0, 0.3);
+        opacity: 0.6;
+        right: 0; 
+        top: 30%;
+        left: 40%;
+        bottom: 0;
+    }
+  
+}
