@@ -264,8 +264,7 @@ li.list-inline-item a {
     padding-top: 0;
 }
 .emp-testimonial {
-    background-color: #000;
-    opacity: 0.5; 
+    background-color:rgba(0, 0, 0, 0.5);
     right: 0; 
     left: 50%;
     bottom: 0;
@@ -327,12 +326,16 @@ li.list-inline-item a {
 
 @media only screen and (max-width: 600px) {
     .emp-testimonial {
-        background-color:rgba(0, 0, 0, 0.3);
-        opacity: 0.6;
+        background-color:rgba(0, 0, 0, 0.4);
         right: 0; 
         top: 30%;
         left: 40%;
         bottom: 0;
     }
   
+}
+@media only screen and (max-width: 800px) {
+    .emp-testimonial {
+     font-size: 0.7rem;
+    }
 }
