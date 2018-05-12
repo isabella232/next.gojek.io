@@ -602,7 +602,7 @@
                     .done(function (data) {
                         var x = 4;
                         $.each(data, function (i, item) {
-                            // console.log(item);
+                            console.log(item);
                             $("#opensourceCards").append(
                                 '<div class="col-md-5 rounded">' +
                                 '<div class="card border-0 mb-4 flex-row opensource-card">' +
@@ -611,7 +611,8 @@
                                 '<h3 class="mb-0 card-title">' +
                                 '<a class="text-dark" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + item.name + '</a>' +
                                 '</h3>' +
-                                '<p class="card-text mb-auto">An enhanced HTTP client for Go </p>' +
+                                // '<p class="card-text mb-auto">An enhanced HTTP client for Go </p>' +
+                                '<p class="description card-text mb-auto">'+ (item.description !== null ? item.description : "")+ '</p>' +
                                 ' </div>' +
                                 ' </div>' +
                                 '</div>'

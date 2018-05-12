@@ -350,6 +350,7 @@ em{
     font-family:"NeoSansBold", sans-serif !important ;
     font-style: normal !important;
     text-decoration: none !important;
+    margin-top : 1rem ;
 }
 
  .card-link{
@@ -362,10 +363,18 @@ em a:hover,{
     text-decoration: none !important;
 }
 
+.description{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 /* em a:hover{
     color: #009944 !important;
     text-decoration: none !important;
 } */
+
 /* blog style end */
 
 
