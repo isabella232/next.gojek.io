@@ -275,15 +275,15 @@ li.list-inline-item a {
     .emp-testimonial {
         background-color:rgba(0, 0, 0, 0.4);
         right: 0; 
-        top: 30%;
-        left: 40%;
+        top: 20%;
+        left: 20%;
         bottom: 0;
         overflow: hidden;
     }
     .emp-testimonial-text{
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp:4;
+        -webkit-line-clamp:3;
         -webkit-box-orient:vertical;
     }
 }

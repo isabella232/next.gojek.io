@@ -40,7 +40,7 @@ $(function () {
                     //12-05 start
                     // output += '<div class="col-md-6 col-lg-4">';
                     output += '<div class=" card border-0">';
-                    output += '<div class="card-body px-0">';
+                    output += '<div class="card-body px-0 pt-2">';
 
                     // output += '<p class="card-text text-success blog-card-data">'+ $.format.date(item.pubDate, "dd/MMM") +'</p>';
 
