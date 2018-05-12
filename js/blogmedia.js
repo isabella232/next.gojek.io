@@ -22,7 +22,7 @@ $(function () {
                     var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
                     var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
                     var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-                    output += '<img class="card-img-top rounded-0" src="' + src + '"alt="Card image cap"';
+                    output += '<img style = "height : 178px" class="card-img-top rounded-0" src="' + src + '"alt="Card image cap"';
                     output += '<div class="card-body px-0">';
                     output += '<h5 class="card-title blog-card-data"><a class="card-link text-black" target = "_blank" href="' + item.link + '">' + item.title + '</a></h5>';
 

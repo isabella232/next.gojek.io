@@ -317,6 +317,20 @@ li.list-inline-item a {
     /* border-bottom: 1px solid black; */
 }
 
+.card-name{ 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.description{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .list-Image{
     height: 60px;
     width: 60px;
@@ -369,12 +383,7 @@ em a:hover,{
     text-decoration: none !important;
 }
 
-.description{
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
+
 
 /* em a:hover{
     color: #009944 !important;

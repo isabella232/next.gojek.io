@@ -41,24 +41,24 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="javascript:void(0);">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="careers/index.html">Careers</a>
+                    <a class="nav-link" href="/careers/">Careers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="open-source/index.html">Open Source</a>
+                    <a class="nav-link" href="/open-source/">Open Source</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs/index.html">Blog</a>
+                    <a class="nav-link" href="/blog/">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-success rounded-0" href="careers/index.html">Apply</a>
+                    <a class="btn btn-success rounded-0" href="/careers/">Apply</a>
                 </li>
             </ul>
         </div>
@@ -592,7 +592,7 @@
                             '<img class="align-self-center p-3" src="img/sample-img-2.png" alt="Sample repository">' +
                             '<div class="card-body">' +
                             '<h3 class="mb-0 card-title">' +
-                            '<a class="text-dark" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + item.name + '</a>' +
+                            '<a class="text-dark card-name" title = "' + item.name + '" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + item.name + '</a>' +
                             '</h3>' +
                             // '<p class="card-text mb-auto">An enhanced HTTP client for Go </p>' +
                             '<p class="description card-text mb-auto">' + (item.description !== null ? item.description : "") + '</p>' +
