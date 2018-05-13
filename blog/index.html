@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/slick.css" />
     <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
-    <link rel="stylesheet" href="../css/shilpa.css">
 
     <title>GO-JEK</title>
 </head>
@@ -29,7 +28,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light neosans-bold text-uppercase">
+    <nav class="navbar navbar-expand-lg navbar-light neosans-bold text-uppercase px-4 py-2">
         <a class="navbar-brand" href="#">
             <img src="../img/gojek-logo.png" alt="">
         </a>
@@ -40,24 +39,24 @@
 
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home
+                <li class="mx-3 nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="mx-3 nav-item">
+                    <a class="nav-link" href="/careers/">Careers</a>
+                </li>
+                <li class="mx-3 nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="mx-3 nav-item">
+                    <a class="nav-link" href="/open-source/">Open Source</a>
+                </li>
+                <li class="mx-3 nav-item active">
+                    <a class="nav-link" href="javascript:void(0);">Blog
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/careers/">Careers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/open-source/">Open Source</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);">Blog</a>
-                </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="btn btn-success rounded-0" href="/careers/">Apply</a>
                 </li>
             </ul>
@@ -233,39 +232,12 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="../js/slick.min.js"></script>
-    <script src="../js/blogmedia.js"></script>
-
-
-    <!-- <script>
-    $(".go-jek-slider").slick({
-        dots: false,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: true,
-                infinite: true,
-                centerMode: true,
-                // centerPadding: '40px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: true,
-                infinite: true,
-                centerMode: true,
-                // centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }]
-    });
-</script> -->
+    <script src="../js/media.js"></script>
+    <script>
+        $(document).ready(function () {
+            getMediumBlogs(9, false);
+        });
+    </script>
 
 </body>
 

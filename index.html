@@ -29,7 +29,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light neosans-bold text-uppercase">
+    <nav class="navbar navbar-expand-lg navbar-light neosans-bold text-uppercase px-4 py-2">
         <a class="navbar-brand" href="#">
             <img src="img/gojek-logo.png" alt="Go-JEK Logo">
         </a>
@@ -40,24 +40,24 @@
 
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
+                <li class="mx-3 nav-item active">
                     <a class="nav-link" href="javascript:void(0);">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="nav-link" href="/careers/">Careers</a>
                 </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="nav-link" href="/open-source/">Open Source</a>
                 </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="nav-link" href="/blog/">Blog</a>
                 </li>
-                <li class="nav-item">
+                <li class="mx-3 nav-item">
                     <a class="btn btn-success rounded-0" href="/careers/">Apply</a>
                 </li>
             </ul>
@@ -118,7 +118,7 @@
 
                 <div class="carousel-caption carousel-btn text-uppercase">
                     <div class="col align-self-center text-left">
-                        <a href="careers" class="btn btn-success rounded-0 ">Apply</a>
+                        <a href="/careers/" class="btn btn-success rounded-0 ">Apply</a>
                         <a href="#" class="btn btn-outline-light rounded-0 all-positions-btn">see all open positions</a>
                     </div>
                 </div>
@@ -336,20 +336,6 @@
     </section>
     <!-- end of blog section -->
 
-    <!-- Work life at GO-JEK -->
-    <!-- <section class="py-5">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="h1 neosans-bold text-uppercase mb-4">Work life at GOJEK</h2>
-                    <div class="embed-responsive embed-responsive-21by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L5FIAniosZU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-        </section> -->
-    <!-- end of work life at GO-JEK -->
-
     <!-- Opensource section -->
     <section class="py-5 bg-green">
         <div class="container">
@@ -377,6 +363,24 @@
         </div>
     </section>
     <!-- end of opensource section -->
+
+    <!-- Impact on Indonesia -->
+    <section class="py-5">
+        <div class="container text-center font-md">
+            <h1 class="display-4">Impact on Indonesia</h1>
+            <p>Donec viverra sem vel sem efficitur, rhoncus tempor nibh dapibus. Aliquam porttitor vel dolor sed lacinia. Curabitur
+                ultrices augue et leo dignissim consectetur. Fusce tincidunt enim massa, sed facilisis massa tincidunt eget.
+                Nulla non urna vel felis dignissim faucibus. Aenean bibendum suscipit dignissim. Suspendisse potenti. Integer
+                sed viverra dolor.</p>
+            <div class="offset-md-2 col-md-8 justify-content-center">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L5FIAniosZU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end of impact on Indonesia section -->
 
     <!-- Call to action -->
     <section class="p-4">
@@ -506,86 +510,60 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
-    <script src="js/media.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/media.js"></script>
+
     <script>
+        $(document).ready(function () {
+            // Call Medium API to get blogs
+            getMediumBlogs(3, true);
 
-        $(".slick-slider").slick({
-            dots: false,
-            infinite: false,
-            centerMode: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 769,
-                    settings: {
-                        arrows: true,
-                        infinite: true,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 577,
-                    settings: {
-                        arrows: true,
-                        infinite: true,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }]
-        });
+            $(".slick-slider").slick({
+                arrows: true,
+                centerMode: false,
+                centerPadding: '40px',
+                dots: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 577,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+            });
 
-        $(".tech-facts-slider").slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 993,
-                    settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
+            $(".tech-facts-slider").slick({
+                arrows: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 577,
+                        settings: {
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
                     }
-                },
-                {
-                    breakpoint: 769,
-                    settings: {
-                        arrows: true,
-                        centerMode: false,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 577,
-                    settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-        // akash-09-05
-        (function () {
+                ]
+            });
+
             var gojeckAPI = "https://api.github.com/orgs/gojek-engineering/repos";
             $.getJSON(gojeckAPI, {
-                // tags: "mount rainier",
-                // tagmode: "any",
-                // format: "json"
+                format: "json"
             })
                 .done(function (data) {
-                    var x = 4;
                     $.each(data, function (i, item) {
-                        console.log(item);
                         $("#opensourceCards").append(
                             '<div class="col-md-5 rounded">' +
                             '<div class="card border-0 mb-4 flex-row opensource-card">' +
@@ -594,20 +572,16 @@
                             '<h3 class="mb-0 card-title">' +
                             '<a class="text-dark card-name" title = "' + item.name + '" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + item.name + '</a>' +
                             '</h3>' +
-                            // '<p class="card-text mb-auto">An enhanced HTTP client for Go </p>' +
                             '<p class="description card-text mb-auto">' + (item.description !== null ? item.description : "") + '</p>' +
                             ' </div>' +
                             ' </div>' +
                             '</div>'
                         );
-
-                        if (i === x - 1) {
-                            return false;
-                        }
+                        return (i < 3);
                     });
                 });
-        })();
-            // akash-09-05
+
+        });
     </script>
 
 </body>

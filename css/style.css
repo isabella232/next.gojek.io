@@ -61,14 +61,6 @@ body {
     font-size: 3rem;
 }
 
-/* h1.section-head-text {
-  font-size: 3.75rem;
-}
-
-h2.section-head-text {
-  font-size: 2.6rem;
-} */
-
 .bg-101 {
     background-image: url(../img/101@2x.png);
     background-position: center right;
@@ -80,7 +72,6 @@ h2.section-head-text {
     background-color: #009944;
 }
 
-/*.principles-card img,*/
 .opensource-card img,
 .tech-stack img {
     max-width: 132px;
@@ -105,9 +96,10 @@ h2.section-head-text {
 .apply-btn {
     border-radius: 1.8rem;
 }
-.apply-btn:hover,
+
+/* .apply-btn:hover,
 .apply-btn:focus {
-}
+} */
 
 .text-green {
     color: #009944;
@@ -129,34 +121,24 @@ footer a:hover {
 .text-opacity {
     opacity: 0.5;
 }
-
-/* Header Styles */
-.navbar {
-    padding: .5rem 1.9rem;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #9a9a9a !important;
-}
-.navbar-light .navbar-nav .active>.nav-link {
-    color: #8dc63f !important;
-}
-
-li.nav-item {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-}
-li.list-inline-item a { 
-    letter-spacing: 1.3rem;
-    font-size: 1.3rem;
-}
 .copyright-text {
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
 }
 
+/* Header Styles */
+.navbar-light .navbar-nav .nav-link {
+    color: #9a9a9a;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #8dc63f;
+}
+li.list-inline-item a { 
+    letter-spacing: 1.3rem;
+    font-size: 1.3rem;
+}
+
 /* Slider Styles*/
-
-
 #go-jek-slider .carousel-item .carousel-caption {
     top: 30%;
     right: 30%;
@@ -176,8 +158,6 @@ li.list-inline-item a {
     padding-bottom: 1px;
     letter-spacing: 1.5px;
 }
-
-
 
 #go-jek-slider .carousel-indicators li {
   width: 1rem;
@@ -214,7 +194,6 @@ li.list-inline-item a {
 }
 
 /*Careers Page styles*/
-
 .background-img {
     background-position: center center;
     background-size: cover;
