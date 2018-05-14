@@ -1,4 +1,5 @@
 /* Common Styles */
+
 @font-face {
     font-family: NeoSansBold;
     src: url('../fonts/NeoSans-Bold.otf');
@@ -118,27 +119,33 @@ footer a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .text-opacity {
     opacity: 0.5;
 }
+
 .copyright-text {
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
 }
 
 /* Header Styles */
+
 .navbar-light .navbar-nav .nav-link {
     color: #9a9a9a;
 }
+
 .navbar-light .navbar-nav .active>.nav-link {
     color: #8dc63f;
 }
-li.list-inline-item a { 
+
+li.list-inline-item a {
     letter-spacing: 1.3rem;
     font-size: 1.3rem;
 }
 
 /* Slider Styles*/
+
 #go-jek-slider .carousel-item .carousel-caption {
     top: 30%;
     right: 30%;
@@ -153,6 +160,7 @@ li.list-inline-item a {
     font-family: "NeoSansBold";
     z-index: 99;
 }
+
 .carousel-btn .btn {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -160,169 +168,191 @@ li.list-inline-item a {
 }
 
 #go-jek-slider .carousel-indicators li {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100%;
-  background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #fff;
 }
+
 #go-jek-slider .carousel-indicators li.active {
     background-color: #009944;
 }
+
 .all-positions-btn {
     border: 1px solid #fff;
     background-color: transparent;
 }
+
 .all-positions-btn:hover {
     background-color: transparent;
 }
 
 /*Go-Jek facts*/
+
 .light-green-bg {
     background-color: #8dc63f;
 }
+
 .dark-green-bg {
     background-color: #040404;
 }
+
 .order-bg {
     background-color: #086c35;
 }
+
 .gray-bg {
     background-color: #f2f2f2;
 }
+
 .text-gray {
     color: #686868;
 }
 
 /*Careers Page styles*/
+
 .background-img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 37.2rem;
 }
+
 .careers-banner {
     background-image: url(../img/careers-banner-1.png);
-    
 }
+
 .go-jek-work {
     background-image: url(../img/go-jek-work.png);
 }
+
 .text-black {
     color: #000;
 }
+
 .open-positions-card {
     padding-bottom: 0;
 }
-.careers-banner-text { 
+
+.careers-banner-text {
     font-size: 3rem;
 }
+
 .opensource-card {
     border-radius: 1rem;
 }
 
 /*Employee Stories Carousel*/
+
 .employee-stories {
     position: relative;
 }
+
 .main-carousel {
     z-index: 99;
 }
+
 .background-carousel {
     position: absolute;
     top: 30px;
     left: 30px;
 }
+
 .background-carousel .carousel {
     background-color: #009944;
 }
+
 .background-carousel img {
-     visibility: hidden;
+    visibility: hidden;
 }
+
 .carousel-head {
-    top: 0; 
+    top: 0;
     padding-top: 0;
 }
+
 .emp-testimonial {
-    background-color:rgba(0, 0, 0, 0.5);
-    right: 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
     left: 50%;
     bottom: 0;
-   
 }
 
 @media only screen and (max-width: 600px) {
     .emp-testimonial {
-        background-color:rgba(0, 0, 0, 0.4);
-        right: 0; 
+        background-color: rgba(0, 0, 0, 0.4);
+        right: 0;
         top: 20%;
         left: 20%;
         bottom: 0;
         overflow: hidden;
     }
-    .emp-testimonial-text{
+    .emp-testimonial-text {
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp:3;
-        -webkit-box-orient:vertical;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .emp-testimonial {
-     font-size: 0.7rem;
+        font-size: 0.7rem;
     }
 }
 
 .responsive-caption {
-    top: 0; 
+    top: 0;
     padding-top: 0;
 }
 
 /*open source styles Start*/
-.pl-b-5{
-    padding-left : 3rem ! important;
+
+.pl-b-5 {
+    padding-left: 3rem ! important;
 }
 
-.pt-b-5{
+.pt-b-5 {
     padding-top: 5rem !important;
 }
 
-.list-3:hover{
+.list-3:hover {
     background-color: #f2f2f2 !important;
 }
 
-.list-3{
+.list-3 {
     background-color: #f2f2f2 !important;
-    border : none ;
+    border: none;
     /* border-bottom: 1px solid black; */
 }
 
-.card-name{ 
+.card-name {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
 
-.description{
+.description {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
-.list-Image{
+.list-Image {
     height: 60px;
     width: 60px;
 }
 
-.list-description{
+.list-description {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space : nowrap;
+    white-space: nowrap;
 }
 
-.blue-bullet{
-    color : skyblue;
+.blue-bullet {
+    color: skyblue;
 }
 
 .list-group-item:first-child {
@@ -335,34 +365,34 @@ li.list-inline-item a {
     border-bottom-right-radius: .60rem;
 }
 
-.list-item-divider{
-    width : 98%;
+.list-item-divider {
+    width: 98%;
 }
+
 /*open source styles End*/
 
 /* blog style start */
-em{
+
+em {
     font-style: normal !important;
 }
 
-.blog-card-data{
-    font-family:"NeoSansBold", sans-serif !important ;
+.blog-card-data {
+    font-family: "NeoSansBold", sans-serif !important;
     font-style: normal !important;
     text-decoration: none !important;
-    margin-top : 1rem ;
+    margin-top: 1rem;
 }
 
- .card-link{
+.card-link {
     text-decoration: none !important;
 }
 
 em a,
-em a:hover,{
-
+em a:hover,
+    {
     text-decoration: none !important;
 }
-
-
 
 /* em a:hover{
     color: #009944 !important;
@@ -370,5 +400,3 @@ em a:hover,{
 } */
 
 /* blog style end */
-
-
