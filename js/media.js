@@ -9,7 +9,7 @@ function getMediumBlogs(count, sliderBool) {
     $.each(response.items, function(k, item) {
       if (k < count) {
         if (!sliderBool) {
-          output += '<div class="col-md-6 col-lg-4">';
+          output += '<div class="col-md-4 col-lg-4">';
         }
         output += '<div class=" card border-0">';
         output += '<div class="card-body px-0 pt-2">';
@@ -94,7 +94,7 @@ function getMediumBlogs(count, sliderBool) {
             settings: {
               arrows: true,
               infinite: true,
-              centerMode: true,
+              centerMode: false,
               centerPadding: "40px",
               slidesToShow: 2
             }

@@ -286,11 +286,11 @@ li.list-inline-item a {
     padding-top: 5rem !important;
 }
 
-.list-3:hover{
+.list:hover{
     background-color: #f2f2f2 !important;
 }
 
-.list-3{
+.list{
     background-color: #f2f2f2 !important;
     border : none ;
     /* border-bottom: 1px solid black; */
@@ -352,16 +352,21 @@ em{
     margin-top : 1rem ;
 }
 
- .card-link{
+.card-link{
     text-decoration: none !important;
 }
 
-em a,
+p em a
+{
+    color: #009944 !important;
+    text-decoration: none !important;
+}
+
+
 em a:hover,{
-
+    color: #009944 !important;
     text-decoration: none !important;
 }
-
 
 
 /* em a:hover{

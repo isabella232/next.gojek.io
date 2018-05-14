@@ -6,7 +6,7 @@
     var x = 5;
     $.each(data, function(i, item) {
       $("#list").append(
-        '<div  href="#" class="list-group-item list-group-item-action d-flex flex-row align-items-center list-3 flex-wrap">' +
+        '<div  href="#" class="list-group-item list-group-item-action d-flex flex-row align-items-center list flex-wrap">' +
           '<div class="col-2 col-sm-2 col-xs-2 d-none d-sm-block">' +
           '<img class ="img-fluid" src="../img/sample-img-2.png" alt="Sample repository">' +
           "</div>" +
