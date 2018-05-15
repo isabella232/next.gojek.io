@@ -97,6 +97,10 @@ body {
 .apply-btn {
     border-radius: 1.8rem;
 }
+.homepage-apply-btn {
+    border-radius: 0.5rem;
+    width: 20rem;
+}
 
 /* .apply-btn:hover,
 .apply-btn:focus {
@@ -190,6 +194,8 @@ li.list-inline-item a {
 .all-positions-btn:hover {
     background-color: transparent;
 }
+
+
 
 /*Go-Jek facts*/
 
