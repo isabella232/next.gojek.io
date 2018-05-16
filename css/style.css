@@ -54,12 +54,29 @@ body {
     font-size: 1.5rem;
 }
 
+.font-lg-x{
+    font-size: 1.75rem;
+}
+
+.font-lg-xx {
+    font-size: 2rem;
+}
+
 .font-xl {
     font-size: 2.2rem;
 }
 
+.font-xl-x{
+    font-size: 2.6rem;
+    line-height: 36px;
+}
+
 .font-xxl {
     font-size: 3rem;
+}
+
+.font-xxl-x{
+    font-size:5.313rem;
 }
 
 .bg-101 {
@@ -97,9 +114,10 @@ body {
 .apply-btn {
     border-radius: 1.8rem;
 }
+
 .homepage-apply-btn {
     border-radius: 0.5rem;
-    width: 20rem;
+    width: 15rem;
 }
 
 /* .apply-btn:hover,
@@ -155,16 +173,16 @@ li.list-inline-item a {
 /* Slider Styles*/
 
 #go-jek-slider .carousel-item .carousel-caption {
-    top: 30%;
+    top: 10%;
     right: 30%;
 }
 
 #go-jek-slider .carousel-indicators {
-    top: 70%;
+    top: 40%;
 }
 
 #go-jek-slider .carousel-btn {
-    top: 75%;
+    top: 45%;
     font-family: "NeoSansBold";
     z-index: 99;
 }
@@ -173,6 +191,7 @@ li.list-inline-item a {
     padding-top: 1px;
     padding-bottom: 1px;
     letter-spacing: 1.5px;
+    font-size: 1rem;
 }
 
 #go-jek-slider .carousel-indicators li {
@@ -195,8 +214,6 @@ li.list-inline-item a {
     background-color: transparent;
 }
 
-
-
 /*Go-Jek facts*/
 
 .light-green-bg {
@@ -204,7 +221,7 @@ li.list-inline-item a {
 }
 
 .dark-green-bg {
-    background-color: #040404;
+    background-color: #8dc63f;
 }
 
 .order-bg {
@@ -288,7 +305,17 @@ li.list-inline-item a {
     bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .emp-testimonial {
+        font-size: 0.7rem;
+    }
+    .carousel-caption .font-xl,
+    .carousel-caption .h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
     .emp-testimonial {
         background-color: rgba(0, 0, 0, 0.4);
         right: 0;
@@ -303,11 +330,17 @@ li.list-inline-item a {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    .emp-testimonial {
+    .carousel-caption .font-xl,
+    .carousel-caption .h1 {
         font-size: 0.7rem;
+    }
+    .carousel-btn .btn {
+        font-size: 0.6rem;
+        width: 9.2rem;
+    }
+    .opensource-card img,
+    .tech-stack img {
+        max-width: 100px;
     }
 }
 
@@ -326,11 +359,11 @@ li.list-inline-item a {
     padding-top: 5rem !important;
 }
 
-.list:hover{
+.list:hover {
     background-color: #f2f2f2 !important;
 }
 
-.list{
+.list {
     background-color: #f2f2f2 !important;
     border: none;
     /* border-bottom: 1px solid black; */
@@ -394,21 +427,27 @@ em {
     margin-top: 1rem;
 }
 
-.card-link{
+.card-link {
     text-decoration: none !important;
 }
 
-p em a
-{
+p em a {
     color: #009944 !important;
     text-decoration: none !important;
 }
 
-
-em a:hover,{
+em a:hover,.apply-btn
+    {
     color: #009944 !important;
     text-decoration: none !important;
 }
+
+/* .numbers-card .card-img-top .img-fluid {
+    width: 310px;
+    height: 250px;
+} */
+
+
 
 
 /* em a:hover{

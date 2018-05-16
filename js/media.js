@@ -4,9 +4,9 @@ function getMediumBlogs(count, sliderBool) {
     rss_url: "https://blog.gojekengineering.com/feed"
   };
 
-  jQuery.get("https://api.rss2json.com/v1/api.json", data, function(response) {
+  jQuery.get("https://api.rss2json.com/v1/api.json", data, function (response) {
     var output = "";
-    $.each(response.items, function(k, item) {
+    $.each(response.items, function (k, item) {
       if (k < count) {
         if (!sliderBool) {
           output += '<div class="col-md-4 col-lg-4">';
@@ -15,18 +15,18 @@ function getMediumBlogs(count, sliderBool) {
         output += '<div class="card-body px-0 pt-2">';
 
         var m_names = new Array(
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "June",
-          "July",
-          "Aug",
-          "Sept",
-          "Oct",
-          "Nov",
-          "Dec"
+          "JANUARY",
+          "FEBRUARY",
+          "MARCH",
+          "APRIL",
+          "MAY",
+          "JUNE",
+          "JULY",
+          "AUGUST",
+          "SEPTEMBER",
+          "OCTOBER",
+          "NOVEMBER",
+          "DECEMBER"
         );
 
         var pubDate = new Date(item.pubDate);
@@ -88,8 +88,7 @@ function getMediumBlogs(count, sliderBool) {
       $(".blog-slider").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        responsive: [
-          {
+        responsive: [{
             breakpoint: 769,
             settings: {
               arrows: true,
@@ -102,10 +101,7 @@ function getMediumBlogs(count, sliderBool) {
           {
             breakpoint: 577,
             settings: {
-              arrows: true,
-              infinite: true,
-              centerMode: true,
-              centerPadding: "40px",
+              dots: true,
               slidesToShow: 1
             }
           }
