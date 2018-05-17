@@ -20,19 +20,27 @@
   src: url("../fonts/NeoSans-Medium.otf");
 }
 
+.neosans-bold {
+  font-family: "NeoSansBold", sans-serif;
+}
+
+.neosans-light {
+  font-family: "NeoSansLight", sans-serif;
+}
+
+.font-neosans {
+  font-family: "NeoSans", sans-serif;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #a5a5a5;
   letter-spacing: normal;
 }
 
-.bg-black {
-  background-color: #000000;
-}
-
-.display-4,
 .h1,
 .h2,
+.display-4,
 .card-title {
   color: #000;
   font-family: "NeoSansBold", sans-serif;
@@ -58,85 +66,53 @@ body {
   font-size: 1.75rem;
 }
 
-.font-lg-xx {
-  font-size: 2rem;
-}
-
 .font-xl {
   font-size: 2.2rem;
 }
 
 .font-xl-x {
   font-size: 2.6rem;
-  line-height: 36px;
 }
 
-.font-xxl {
-  font-size: 3rem;
-}
-
-.font-xxl-x {
-  font-size: 5.313rem;
-}
+/* .display-4 {
+  font-size: 3.75rem;
+} */
 
 .bg-101 {
   background: url(../img/101@2x.png) center right no-repeat;
   background-size: contain;
 }
 
-.green-bg {
-  background-color: #009944;
-}
-
-.opensource-card img {
-  max-width: 132px;
-}
-
-.display-4 {
-  font-size: 3.75rem;
-}
-
-.neosans-bold {
-  font-family: "NeoSansBold", sans-serif;
-}
-
-.neosans-light {
-  font-family: "NeoSansLight", sans-serif;
-}
-
-.font-neosans {
-  font-family: "NeoSans", sans-serif;
-}
-
-.apply-btn {
-  border-radius: 1.8rem;
-}
-
-.homepage-apply-btn {
-  border-radius: 0.5rem;
-  width: 15rem;
-}
-
-/* .apply-btn:hover,
-.apply-btn:focus {
-} */
-
-.text-green {
-  color: #009944;
-}
-
-.font-bold {
-  font-weight: 900;
+.bg-black {
+  background-color: #000000;
 }
 
 .bg-green {
   background-color: #009944;
 }
 
+.text-green {
+  color: #009944;
+}
+
+.opensource-card img {
+  max-width: 132px;
+}
+
+.banner-apply-btn {
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
 footer a,
 footer a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+footer .list-inline-item a {
+  letter-spacing: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .text-opacity {
@@ -146,29 +122,21 @@ footer a:hover {
 .copyright-text {
   font-size: 0.85rem;
   letter-spacing: 0.1rem;
+  opacity: 0.5;
 }
 
 /* Header Styles */
-
 .navbar-light .navbar-nav .nav-link {
   color: #9a9a9a;
 }
 
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
   color: #8dc63f;
 }
 
-.nav-link:hover {
-  color: #8dc63f !important;
-}
-
-li.list-inline-item a {
-  letter-spacing: 1.3rem;
-  font-size: 1.3rem;
-}
-
 /* Slider Styles*/
-
 #go-jek-slider .carousel-item .carousel-caption {
   top: 10%;
   right: 30%;
@@ -184,13 +152,6 @@ li.list-inline-item a {
   z-index: 99;
 }
 
-.carousel-btn .btn {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  letter-spacing: 1.5px;
-  font-size: 1rem;
-}
-
 #go-jek-slider .carousel-indicators li {
   width: 1rem;
   height: 1rem;
@@ -202,22 +163,26 @@ li.list-inline-item a {
   background-color: #009944;
 }
 
-.all-positions-btn {
+.carousel-btn .btn {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+}
+
+/* .all-positions-btn {
   border: 1px solid #fff;
   background-color: transparent;
+  color: #fff;
 }
 
 .all-positions-btn:hover {
   background-color: transparent;
-}
+} */
 
 /*Go-Jek facts*/
 
 .light-green-bg {
-  background-color: #8dc63f;
-}
-
-.dark-green-bg {
   background-color: #8dc63f;
 }
 
@@ -233,8 +198,11 @@ li.list-inline-item a {
   color: #686868;
 }
 
-/*Careers Page styles*/
+.numbers-card .card-img-top .img-fluid {
+  height: 199px;
+}
 
+/*Careers Page styles*/
 .background-img {
   background-position: center center;
   background-size: cover;
@@ -254,10 +222,6 @@ li.list-inline-item a {
   color: #000;
 }
 
-.open-positions-card {
-  padding-bottom: 0;
-}
-
 .careers-banner-text {
   font-size: 3rem;
 }
@@ -267,7 +231,6 @@ li.list-inline-item a {
 }
 
 /*Employee Stories Carousel*/
-
 .employee-stories {
   position: relative;
 }
@@ -312,21 +275,7 @@ li.list-inline-item a {
   }
 }
 
-@media only screen and (max-width: 575.98px) {
-  .emp-testimonial {
-    background-color: rgba(0, 0, 0, 0.4);
-    right: 0;
-    top: 20%;
-    left: 20%;
-    bottom: 0;
-    overflow: hidden;
-  }
-  .emp-testimonial-text {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
+@media only screen and (max-width: 577px) {
   .carousel-caption .font-xl,
   .carousel-caption .h1 {
     font-size: 0.7rem;
@@ -346,25 +295,11 @@ li.list-inline-item a {
   padding-top: 0;
 }
 
-/*open source styles Start*/
-
-/* .pl-b-5 {
-  padding-left: 3rem !important;
-}
-
-.pt-b-5 {
-  padding-top: 5rem !important;
-} */
-
-/* .list:hover {
-  background-color: #f2f2f2 !important;
-} */
-
+/*Open source styles Start*/
 .list,
 .list:hover {
   background-color: #f2f2f2;
   border: none;
-  /* border-bottom: 1px solid black; */
 }
 
 .card-name {
@@ -426,10 +361,4 @@ li.list-inline-item a {
 
 .blog-date a {
   color: #009944;
-}
-
-/* em a:hover, */
-.apply-btn {
-  color: #009944;
-  text-decoration: none;
 }
