@@ -54,7 +54,7 @@ body {
     font-size: 1.5rem;
 }
 
-.font-lg-x{
+.font-lg-x {
     font-size: 1.75rem;
 }
 
@@ -66,17 +66,17 @@ body {
     font-size: 2.2rem;
 }
 
-.font-xl-x{
+.font-xl-x {
     font-size: 2.6rem;
-    line-height: 36px;
 }
 
 .font-xxl {
     font-size: 3rem;
 }
 
-.font-xxl-x{
-    font-size:5.313rem;
+.font-xxl-x {
+    font-size: 5.313rem;
+    line-height: 13.5px;
 }
 
 .bg-101 {
@@ -115,7 +115,7 @@ body {
     border-radius: 1.8rem;
 }
 
-.homepage-apply-btn {
+.banner-apply-btn {
     border-radius: 0.5rem;
     width: 15rem;
 }
@@ -208,6 +208,7 @@ li.list-inline-item a {
 .all-positions-btn {
     border: 1px solid #fff;
     background-color: transparent;
+    color: #fff;
 }
 
 .all-positions-btn:hover {
@@ -234,6 +235,10 @@ li.list-inline-item a {
 
 .text-gray {
     color: #686868;
+}
+
+.numbers-card .card-img-top .img-fluid {
+    height: 199px;
 }
 
 /*Careers Page styles*/
@@ -315,21 +320,8 @@ li.list-inline-item a {
     }
 }
 
-@media only screen and (max-width: 575.98px) {
-    .emp-testimonial {
-        background-color: rgba(0, 0, 0, 0.4);
-        right: 0;
-        top: 20%;
-        left: 20%;
-        bottom: 0;
-        overflow: hidden;
-    }
-    .emp-testimonial-text {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
+@media only screen and (max-width: 577px) {
+   
     .carousel-caption .font-xl,
     .carousel-caption .h1 {
         font-size: 0.7rem;
@@ -436,19 +428,11 @@ p em a {
     text-decoration: none !important;
 }
 
-em a:hover,.apply-btn
-    {
-    color: #009944 !important;
+em a:hover,
+.apply-btn {
+    /* color: #009944 !important; */
     text-decoration: none !important;
 }
-
-/* .numbers-card .card-img-top .img-fluid {
-    width: 310px;
-    height: 250px;
-} */
-
-
-
 
 /* em a:hover{
     color: #009944 !important;
