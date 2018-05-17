@@ -2,22 +2,34 @@
 
 @font-face {
     font-family: NeoSansBold;
-    src: url('../fonts/NeoSans-Bold.otf');
+    src: url("../fonts/NeoSans-Bold.otf");
 }
 
 @font-face {
     font-family: NeoSansLight;
-    src: url('../fonts/NeoSans-Light.otf');
+    src: url("../fonts/NeoSans-Light.otf");
 }
 
 @font-face {
     font-family: NeoSans;
-    src: url('../fonts/NeoSans.otf');
+    src: url("../fonts/NeoSans.otf");
 }
 
 @font-face {
     font-family: NeoSansMedium;
-    src: url('../fonts/NeoSans-Medium.otf');
+    src: url("../fonts/NeoSans-Medium.otf");
+}
+
+.neosans-bold {
+    font-family: "NeoSansBold", sans-serif;
+}
+
+.neosans-light {
+    font-family: "NeoSansLight", sans-serif;
+}
+
+.font-neosans {
+    font-family: "NeoSans", sans-serif;
 }
 
 body {
@@ -26,13 +38,9 @@ body {
     letter-spacing: normal;
 }
 
-.bg-black {
-    background-color: #000000;
-}
-
-.display-4,
 .h1,
 .h2,
+.display-4,
 .card-title {
     color: #000;
     font-family: "NeoSansBold", sans-serif;
@@ -50,7 +58,7 @@ body {
     font-size: 1.31rem;
 }
 
-.font-md-x{
+.font-md-x {
     font-size: 1.4rem;
 }
 
@@ -62,7 +70,7 @@ body {
     font-size: 1.75rem;
 }
 
-.font-lg-xx {
+.font-xl-l {
     font-size: 2rem;
 }
 
@@ -74,76 +82,45 @@ body {
     font-size: 2.6rem;
 }
 
-.font-xxl {
-    font-size: 3rem;
-}
-
-.font-xxl-x {
-    font-size: 5.313rem;
-    line-height: 13.5px;
-}
-
-.bg-101 {
-    background-image: url(../img/101@2x.png);
-    background-position: center right;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.green-bg {
-    background-color: #009944;
-}
-
-.opensource-card img,
-.tech-stack img {
-    max-width: 132px;
-}
-
-.display-4 {
-    font-size: 3.75rem;
-}
-
-.neosans-bold {
-    font-family: "NeoSansBold", sans-serif;
-}
-
-.neosans-light {
-    font-family: "NeoSansLight", sans-serif;
-}
-
-.font-neosans {
-    font-family: "NeoSans", sans-serif;
-}
-
-.apply-btn {
-    border-radius: 1.8rem;
-}
-
-.banner-apply-btn {
-    border-radius: 0.5rem;
-    width: 15rem;
-}
-
-/* .apply-btn:hover,
-.apply-btn:focus {
+/* .display-4 {
+  font-size: 3.75rem;
 } */
 
-.text-green {
-    color: #009944;
+.bg-101 {
+    background: url(../img/101@2x.png) center right no-repeat;
+    background-size: contain;
 }
 
-.font-bold {
-    font-weight: 900;
+.bg-black {
+    background-color: #000000;
 }
 
 .bg-green {
     background-color: #009944;
 }
 
+.text-green {
+    color: #009944;
+}
+
+.opensource-card img {
+    max-width: 132px;
+}
+
+.banner-apply-btn {
+    border-radius: 0.5rem;
+    width: 16rem;
+}
+
 footer a,
 footer a:hover {
     color: #fff;
     text-decoration: none;
+}
+
+footer .list-inline-item a {
+    letter-spacing: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .text-opacity {
@@ -153,6 +130,12 @@ footer a:hover {
 .copyright-text {
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
+    opacity: 0.5;
+}
+
+/* Navbar style */
+button.navbar-toggler{
+    border: none;
 }
 
 /* Header Styles */
@@ -161,17 +144,29 @@ footer a:hover {
     color: #9a9a9a;
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #8dc63f;
 }
 
-.nav-link:hover {
-    color: #8dc63f !important;
+/* Homepage Mobile view carousel style */
+
+.go-jek-mobile-slider .carousel-item {
+    height: 400px;
 }
 
-li.list-inline-item a {
-    letter-spacing: 1.3rem;
-    font-size: 1.3rem;
+.go-jek-mobile-slider .carousel-item img {
+    min-height: 400px;
+}
+
+#go-jek-mobile-slider .carousel-item .carousel-caption {
+    top: 45%;
+    font-size:1.6rem;
+}
+
+#go-jek-mobile-slider .carousel-btn {
+    z-index: 99;
 }
 
 /* Slider Styles*/
@@ -191,13 +186,6 @@ li.list-inline-item a {
     z-index: 99;
 }
 
-.carousel-btn .btn {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    letter-spacing: 1.5px;
-    font-size: 1rem;
-}
-
 #go-jek-slider .carousel-indicators li {
     width: 1rem;
     height: 1rem;
@@ -209,15 +197,22 @@ li.list-inline-item a {
     background-color: #009944;
 }
 
-.all-positions-btn {
-    border: 1px solid #fff;
-    background-color: transparent;
-    color: #fff;
+.carousel-btn .btn {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+/* .all-positions-btn {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .all-positions-btn:hover {
-    background-color: transparent;
-}
+  background-color: transparent;
+} */
 
 /*Go-Jek facts*/
 
@@ -225,12 +220,12 @@ li.list-inline-item a {
     background-color: #8dc63f;
 }
 
-.dark-green-bg {
-    background-color: #8dc63f;
-}
-
 .order-bg {
     background-color: #086c35;
+}
+
+.dark-green-bg {
+    background-color: #009742
 }
 
 .gray-bg {
@@ -264,10 +259,6 @@ li.list-inline-item a {
 
 .text-black {
     color: #000;
-}
-
-.open-positions-card {
-    padding-bottom: 0;
 }
 
 .careers-banner-text {
@@ -318,26 +309,20 @@ li.list-inline-item a {
     .emp-testimonial {
         font-size: 0.7rem;
     }
-    /* .carousel-caption .font-xl,
-    .carousel-caption .h1 {
-        font-size: 1rem;
-    } */
+    .go-jek-work-text {
+        position: absolute;
+        bottom: 0;
+        left: 27%;
+    }
 }
 
 @media only screen and (max-width: 577px) {
-   
-    /* .carousel-caption .font-xl,
-    .carousel-caption .h1 {
-        font-size: 0.7rem;
-    }
-    .carousel-btn .btn {
-        font-size: 0.6rem;
-        width: 9.2rem;
-    } */
     .opensource-card img,
     .tech-stack img {
         max-width: 100px;
     }
+
+
 }
 
 .responsive-caption {
@@ -345,24 +330,12 @@ li.list-inline-item a {
     padding-top: 0;
 }
 
-/*open source styles Start*/
+/*Open source styles Start*/
 
-.pl-b-5 {
-    padding-left: 3rem ! important;
-}
-
-.pt-b-5 {
-    padding-top: 5rem !important;
-}
-
+.list,
 .list:hover {
-    background-color: #f2f2f2 !important;
-}
-
-.list {
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2;
     border: none;
-    /* border-bottom: 1px solid black; */
 }
 
 .card-name {
@@ -395,13 +368,13 @@ li.list-inline-item a {
 }
 
 .list-group-item:first-child {
-    border-top-left-radius: .60rem;
-    border-top-right-radius: .60rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
 }
 
 .list-group-item:last-child {
-    border-bottom-left-radius: .60rem;
-    border-bottom-right-radius: .60rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
 }
 
 .list-item-divider {
@@ -412,35 +385,46 @@ li.list-inline-item a {
 
 /* blog style start */
 
-em {
-    font-style: normal !important;
+.medium-blog em,
+.card-body {
+    font-style: normal;
+    text-decoration: none;
 }
 
-.blog-card-data {
-    font-family: "NeoSansBold", sans-serif !important;
-    font-style: normal !important;
-    text-decoration: none !important;
-    margin-top: 1rem;
+.medium-blog a:hover {
+    text-decoration: none;
 }
 
-.card-link {
-    text-decoration: none !important;
+.blog-date a {
+    color: #009944;
 }
 
-p em a {
-    color: #009944 !important;
-    text-decoration: none !important;
+/* Responsive text */
+
+html {
+    font-size: 1rem;
 }
 
-em a:hover,
-.apply-btn {
-    /* color: #009944 !important; */
-    text-decoration: none !important;
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575px) {
+    html {
+        font-size: 0.6rem;
+    }
 }
 
-/* em a:hover{
-    color: #009944 !important;
-    text-decoration: none !important;
-} */
+/*  Medium devices (tablets, 768px and up) */
 
-/* blog style end */
+@media (min-width: 768px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1rem;
+    }
+}

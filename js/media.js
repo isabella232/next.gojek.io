@@ -11,8 +11,8 @@ function getMediumBlogs(count, sliderBool) {
         if (!sliderBool) {
           output += '<div class="col-md-4 col-lg-4">';
         }
-        output += '<div class=" card border-0">';
-        output += '<div class="card-body px-0 pt-2">';
+        output += '<div class="card medium-blog border-0">';
+        // output += '<div class="card-body px-0 pt-2">';
 
         var m_names = new Array(
           "JANUARY",
@@ -38,11 +38,11 @@ function getMediumBlogs(count, sliderBool) {
           pubDate.getFullYear();
 
         output +=
-          '<p class="card-text text-success blog-card-data">' +
+          '<p class="card-text text-success blog-date neosans-bold">' +
           pubDate +
           "</p>";
 
-        output += "</div>";
+        // output += "</div>";
         var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
         var srcIndex =
           item.description.substring(tagIndex).indexOf("src=") + tagIndex; // Find where the src attribute starts
@@ -51,19 +51,20 @@ function getMediumBlogs(count, sliderBool) {
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
         output +=
-          '<img style = "height:178px" class="card-img-top rounded-0" src="' +
+          '<img style = "min-height:220px" class="card-img-top img-fluid" src="' +
           src +
-          '"alt="Card image cap"';
-        output += '<div class="card-body px-0">';
+          '"alt="'+
+          item.title + '">';
+        output += '<div class="card-body px-0 text-center text-md-left text-black">';
         output +=
-          '<h5 class="card-title blog-card-data"><a class="card-title card-link text-black" target = "_blank" href="' +
+          '<h5 class="card-title neosans-bold"><a class="text-dark  font-lg " target = "_blank" href="' +
           item.link +
           '">' +
           item.title +
           "</a></h5>";
 
         output +=
-          '<div class="post-meta"><span>By ' + item.author + "</span></div>";
+          '<div class="post-meta "><span>By ' + item.author + "</span></div>";
 
         var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
         var maxLength = 120; // maximum number of characters to extract
