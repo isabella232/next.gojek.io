@@ -1,123 +1,120 @@
 /* Common Styles */
 
 @font-face {
-    font-family: NeoSansBold;
-    src: url('../fonts/NeoSans-Bold.otf');
+  font-family: NeoSansBold;
+  src: url("../fonts/NeoSans-Bold.otf");
 }
 
 @font-face {
-    font-family: NeoSansLight;
-    src: url('../fonts/NeoSans-Light.otf');
+  font-family: NeoSansLight;
+  src: url("../fonts/NeoSans-Light.otf");
 }
 
 @font-face {
-    font-family: NeoSans;
-    src: url('../fonts/NeoSans.otf');
+  font-family: NeoSans;
+  src: url("../fonts/NeoSans.otf");
 }
 
 @font-face {
-    font-family: NeoSansMedium;
-    src: url('../fonts/NeoSans-Medium.otf');
+  font-family: NeoSansMedium;
+  src: url("../fonts/NeoSans-Medium.otf");
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #a5a5a5;
-    letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
+  color: #a5a5a5;
+  letter-spacing: normal;
 }
 
 .bg-black {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .display-4,
 .h1,
 .h2,
 .card-title {
-    color: #000;
-    font-family: "NeoSansBold", sans-serif;
+  color: #000;
+  font-family: "NeoSansBold", sans-serif;
 }
 
 .font-xs {
-    font-size: 0.94rem;
+  font-size: 0.94rem;
 }
 
 .font-sm {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .font-md {
-    font-size: 1.31rem;
+  font-size: 1.31rem;
 }
 
 .font-lg {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.font-lg-x{
-    font-size: 1.75rem;
+.font-lg-x {
+  font-size: 1.75rem;
 }
 
 .font-lg-xx {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .font-xl {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
-.font-xl-x{
-    font-size: 2.6rem;
-    line-height: 36px;
+.font-xl-x {
+  font-size: 2.6rem;
+  line-height: 36px;
 }
 
 .font-xxl {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.font-xxl-x{
-    font-size:5.313rem;
+.font-xxl-x {
+  font-size: 5.313rem;
 }
 
 .bg-101 {
-    background-image: url(../img/101@2x.png);
-    background-position: center right;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background: url(../img/101@2x.png) center right no-repeat;
+  background-size: contain;
 }
 
 .green-bg {
-    background-color: #009944;
+  background-color: #009944;
 }
 
-.opensource-card img,
-.tech-stack img {
-    max-width: 132px;
+.opensource-card img {
+  max-width: 132px;
 }
 
 .display-4 {
-    font-size: 3.75rem;
+  font-size: 3.75rem;
 }
 
 .neosans-bold {
-    font-family: "NeoSansBold", sans-serif;
+  font-family: "NeoSansBold", sans-serif;
 }
 
 .neosans-light {
-    font-family: "NeoSansLight", sans-serif;
+  font-family: "NeoSansLight", sans-serif;
 }
 
 .font-neosans {
-    font-family: "NeoSans", sans-serif;
+  font-family: "NeoSans", sans-serif;
 }
 
 .apply-btn {
-    border-radius: 1.8rem;
+  border-radius: 1.8rem;
 }
 
 .homepage-apply-btn {
-    border-radius: 0.5rem;
-    width: 15rem;
+  border-radius: 0.5rem;
+  width: 15rem;
 }
 
 /* .apply-btn:hover,
@@ -125,334 +122,314 @@ body {
 } */
 
 .text-green {
-    color: #009944;
+  color: #009944;
 }
 
 .font-bold {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .bg-green {
-    background-color: #009944;
+  background-color: #009944;
 }
 
 footer a,
 footer a:hover {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .text-opacity {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .copyright-text {
-    font-size: 0.85rem;
-    letter-spacing: 0.1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
 }
 
 /* Header Styles */
 
 .navbar-light .navbar-nav .nav-link {
-    color: #9a9a9a;
+  color: #9a9a9a;
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
-    color: #8dc63f;
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #8dc63f;
 }
 
 .nav-link:hover {
-    color: #8dc63f !important;
+  color: #8dc63f !important;
 }
 
 li.list-inline-item a {
-    letter-spacing: 1.3rem;
-    font-size: 1.3rem;
+  letter-spacing: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* Slider Styles*/
 
 #go-jek-slider .carousel-item .carousel-caption {
-    top: 10%;
-    right: 30%;
+  top: 10%;
+  right: 30%;
 }
 
 #go-jek-slider .carousel-indicators {
-    top: 40%;
+  top: 40%;
 }
 
 #go-jek-slider .carousel-btn {
-    top: 45%;
-    font-family: "NeoSansBold";
-    z-index: 99;
+  top: 45%;
+  font-family: "NeoSansBold";
+  z-index: 99;
 }
 
 .carousel-btn .btn {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    letter-spacing: 1.5px;
-    font-size: 1rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
 }
 
 #go-jek-slider .carousel-indicators li {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 #go-jek-slider .carousel-indicators li.active {
-    background-color: #009944;
+  background-color: #009944;
 }
 
 .all-positions-btn {
-    border: 1px solid #fff;
-    background-color: transparent;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .all-positions-btn:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /*Go-Jek facts*/
 
 .light-green-bg {
-    background-color: #8dc63f;
+  background-color: #8dc63f;
 }
 
 .dark-green-bg {
-    background-color: #8dc63f;
+  background-color: #8dc63f;
 }
 
 .order-bg {
-    background-color: #086c35;
+  background-color: #086c35;
 }
 
 .gray-bg {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .text-gray {
-    color: #686868;
+  color: #686868;
 }
 
 /*Careers Page styles*/
 
 .background-img {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 37.2rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 37.2rem;
 }
 
 .careers-banner {
-    background-image: url(../img/careers-banner-1.png);
+  background-image: url(../img/careers-banner-1.png);
 }
 
 .go-jek-work {
-    background-image: url(../img/go-jek-work.png);
+  background-image: url(../img/go-jek-work.png);
 }
 
 .text-black {
-    color: #000;
+  color: #000;
 }
 
 .open-positions-card {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .careers-banner-text {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .opensource-card {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 /*Employee Stories Carousel*/
 
 .employee-stories {
-    position: relative;
+  position: relative;
 }
 
 .main-carousel {
-    z-index: 99;
+  z-index: 99;
 }
 
 .background-carousel {
-    position: absolute;
-    top: 30px;
-    left: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .background-carousel .carousel {
-    background-color: #009944;
+  background-color: #009944;
 }
 
 .background-carousel img {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .carousel-head {
-    top: 0;
-    padding-top: 0;
+  top: 0;
+  padding-top: 0;
 }
 
 .emp-testimonial {
-    background-color: rgba(0, 0, 0, 0.5);
-    right: 0;
-    left: 50%;
-    bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  left: 50%;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 800px) {
-    .emp-testimonial {
-        font-size: 0.7rem;
-    }
-    .carousel-caption .font-xl,
-    .carousel-caption .h1 {
-        font-size: 1rem;
-    }
+  .emp-testimonial {
+    font-size: 0.7rem;
+  }
+  .carousel-caption .font-xl,
+  .carousel-caption .h1 {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 575.98px) {
-    .emp-testimonial {
-        background-color: rgba(0, 0, 0, 0.4);
-        right: 0;
-        top: 20%;
-        left: 20%;
-        bottom: 0;
-        overflow: hidden;
-    }
-    .emp-testimonial-text {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
-    .carousel-caption .font-xl,
-    .carousel-caption .h1 {
-        font-size: 0.7rem;
-    }
-    .carousel-btn .btn {
-        font-size: 0.6rem;
-        width: 9.2rem;
-    }
-    .opensource-card img,
-    .tech-stack img {
-        max-width: 100px;
-    }
+  .emp-testimonial {
+    background-color: rgba(0, 0, 0, 0.4);
+    right: 0;
+    top: 20%;
+    left: 20%;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .emp-testimonial-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .carousel-caption .font-xl,
+  .carousel-caption .h1 {
+    font-size: 0.7rem;
+  }
+  .carousel-btn .btn {
+    font-size: 0.6rem;
+    width: 9.2rem;
+  }
+  .opensource-card img,
+  .tech-stack img {
+    max-width: 100px;
+  }
 }
 
 .responsive-caption {
-    top: 0;
-    padding-top: 0;
+  top: 0;
+  padding-top: 0;
 }
 
 /*open source styles Start*/
 
-.pl-b-5 {
-    padding-left: 3rem ! important;
+/* .pl-b-5 {
+  padding-left: 3rem !important;
 }
 
 .pt-b-5 {
-    padding-top: 5rem !important;
-}
+  padding-top: 5rem !important;
+} */
 
+/* .list:hover {
+  background-color: #f2f2f2 !important;
+} */
+
+.list,
 .list:hover {
-    background-color: #f2f2f2 !important;
-}
-
-.list {
-    background-color: #f2f2f2 !important;
-    border: none;
-    /* border-bottom: 1px solid black; */
+  background-color: #f2f2f2;
+  border: none;
+  /* border-bottom: 1px solid black; */
 }
 
 .card-name {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .description {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .list-Image {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 .list-description {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .blue-bullet {
-    color: skyblue;
+  color: skyblue;
 }
 
 .list-group-item:first-child {
-    border-top-left-radius: .60rem;
-    border-top-right-radius: .60rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
 }
 
 .list-group-item:last-child {
-    border-bottom-left-radius: .60rem;
-    border-bottom-right-radius: .60rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
 }
 
 .list-item-divider {
-    width: 98%;
+  width: 98%;
 }
 
 /*open source styles End*/
 
 /* blog style start */
 
-em {
-    font-style: normal !important;
+.medium-blog em,
+.card-body {
+  font-style: normal;
+  text-decoration: none;
 }
 
-.blog-card-data {
-    font-family: "NeoSansBold", sans-serif !important;
-    font-style: normal !important;
-    text-decoration: none !important;
-    margin-top: 1rem;
+.medium-blog a:hover {
+  text-decoration: none;
 }
 
-.card-link {
-    text-decoration: none !important;
+.blog-date a {
+  color: #009944;
 }
 
-p em a {
-    color: #009944 !important;
-    text-decoration: none !important;
+/* em a:hover, */
+.apply-btn {
+  color: #009944;
+  text-decoration: none;
 }
-
-em a:hover,.apply-btn
-    {
-    color: #009944 !important;
-    text-decoration: none !important;
-}
-
-/* .numbers-card .card-img-top .img-fluid {
-    width: 310px;
-    height: 250px;
-} */
-
-
-
-
-/* em a:hover{
-    color: #009944 !important;
-    text-decoration: none !important;
-} */
-
-/* blog style end */
