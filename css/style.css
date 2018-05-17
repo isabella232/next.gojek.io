@@ -50,6 +50,10 @@ body {
     font-size: 1.31rem;
 }
 
+.font-md-x{
+    font-size: 1.4rem;
+}
+
 .font-lg {
     font-size: 1.5rem;
 }
@@ -314,22 +318,22 @@ li.list-inline-item a {
     .emp-testimonial {
         font-size: 0.7rem;
     }
-    .carousel-caption .font-xl,
+    /* .carousel-caption .font-xl,
     .carousel-caption .h1 {
         font-size: 1rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 577px) {
    
-    .carousel-caption .font-xl,
+    /* .carousel-caption .font-xl,
     .carousel-caption .h1 {
         font-size: 0.7rem;
     }
     .carousel-btn .btn {
         font-size: 0.6rem;
         width: 9.2rem;
-    }
+    } */
     .opensource-card img,
     .tech-stack img {
         max-width: 100px;
