@@ -82,6 +82,10 @@ body {
     font-size: 2.6rem;
 }
 
+.font-xxl {
+    font-size: 5rem;
+}
+
 .bg-101 {
     background: url(../img/101@2x.png) center right no-repeat;
     background-size: contain;
@@ -328,7 +332,7 @@ button.navbar-toggler {
 
 /* Tech stack */
 
-.tech-stack-img {
+.custom-logo-width {
     width: 150px;
 }
 
@@ -409,6 +413,45 @@ html {
     html {
         font-size: 14px;
     }
+    .second-path {
+        position: absolute;
+        width: 26%;
+        right: 44%;
+        top: 21%;
+    }
+    .third-path {
+        position: absolute;
+        width: 19%;
+        top: 32%;
+        right: 12%;
+    }
+    .fourth-path {
+        position: absolute;
+        width: 1%;
+        right: 36%;
+        top: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .second-path {
+        position: absolute;
+        width: 26%;
+        right: 44%;
+        top: 23%;
+    }
+    .third-path {
+        position: absolute;
+        width: 19%;
+        top: 35.4%;
+        right: 11%;
+    }
+    .fourth-path {
+        position: absolute;
+        width: 1%;
+        right: 36%;
+        top: 44%;
+    }
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
@@ -416,6 +459,24 @@ html {
 @media (min-width: 1200px) {
     html {
         font-size: 16px;
+    }
+    .second-path {
+        position: absolute;
+        width: 26%;
+        right: 44%;
+        top: 23%;
+    }
+    .third-path {
+        position: absolute;
+        width: 19%;
+        top: 36%;
+        right: 10%;
+    }
+    .fourth-path {
+        position: absolute;
+        width: 1%;
+        right: 36%;
+        bottom: 49%;
     }
 }
 
@@ -431,24 +492,16 @@ li {
     right: 50%;
 }
 
-.second-path {
-    position: absolute;
-    width: 25%;
-    right: 44%;
-    top: 25%;
-}
-
-.third-path {
-    position: absolute;
-    width: 19%;
-    top: 41%;
-    right: 10%;
-}
-
-.fourth-path{
+.fifth-path {
     position: absolute;
     width: 1%;
-    right: 36%;
-    top: 49%;
+    right: 50%;
+    bottom: 0%;
 }
 
+.about-us-path-style {
+    fill: none;
+    stroke: #094;
+    stroke-miterlimit: 10;
+    stroke-width: 14px;
+}
