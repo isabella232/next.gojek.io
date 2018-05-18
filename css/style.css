@@ -435,7 +435,7 @@ li {
     position: absolute;
     width: 25%;
     right: 44%;
-    top: 26%;
+    top: 25%;
 }
 
 .third-path {
@@ -443,5 +443,12 @@ li {
     width: 19%;
     top: 41%;
     right: 10%;
+}
+
+.fourth-path{
+    position: absolute;
+    width: 1%;
+    right: 36%;
+    top: 49%;
 }
 
