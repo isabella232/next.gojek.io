@@ -20,10 +20,10 @@ function getGithubRepo(count , sliderBool) {
                     '<div class="card border-0 mb-4 flex-row opensource-card">' +
                     '<img class="align-self-center p-3 " src="'+ src +'" alt="Sample repository">' +
                     '<div class="card-body">' +
-                    '<h3 class="mb-0 card-title">' +
-                    '<a class="text-dark card-name" title = "' + data[i].name + '" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + data[i].name + '</a>' +
+                    '<h3 class="mb-0 opensource-card-title">' +
+                    '<a class="text-dark" title = "' + data[i].name + '" href="https://github.com/gojek-engineering/go-ratelimit" target="_blank">' + data[i].name + '</a>' +
                     '</h3>' +
-                    '<p class="description card-text mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
+                    '<p class="opensource-card-description mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
                     ' </div>' +
                     ' </div>' +
                     '</div>'
