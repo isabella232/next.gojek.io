@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="../css/slick.css" />
     <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
     <link rel="stylesheet" href="../css/custom.css">
@@ -68,10 +69,10 @@
     <!-- Go-Jek journey -->
     <section class="mt-5">
         <div class="container-fluid egg-bg-color">
-            <div class="container">
+            <div class="container ">
                 <div class="d-flex flex-row flex-wrap  justify-content-center align-items-center">
 
-                    <div class="col-md-12 col-lg-3 text-center  pt-5">
+                    <div class="col-md-12 col-lg-3 text-center pt-5 w3-animate-left w3-animate-opacity ">
                         <p class="neosans-bold text-white font-xl">
                             The GO-JEK Journey
                         </p>
@@ -79,10 +80,10 @@
 
                     <div class="col-md-12 col-lg-9  text-white">
                         <div class="d-flex flex-row flex-wrap text-md-left text-center align-items-center">
-                            <div class="col-md-6 col-sm-12 col-lg-6 text-center pt-4">
+                            <div class="col-md-6 col-sm-12 col-lg-6 text-center pt-4 transition-one">
                                 <img class="img-fluid" src="../img/egg.gif">
                             </div>
-                            <div class="col-md-6 col-sm-12 col-lg-6 pt-2 ">
+                            <div class="col-md-6 col-sm-12 col-lg-6 pt-2 w3-animate-left w3-animate-opacity transition-two">
                                 <p class="neosans-bold font-lg">
                                     The GO-JEK App was launched in the beginning of 2015.
                                 </p>
@@ -97,7 +98,7 @@
         </div>
 
         <div class="container relative-position pb-5">
-            <div class="">
+            <div class="d-none d-md-block">
                 <svg class="first-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 425">
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_1-2" data-name="Layer 1">
@@ -109,10 +110,10 @@
 
 
             <div class="d-flex flex-row flex-wrap align-items-center pt-5 ">
-                <div class="col-md-5 offset-md-1 col-sm-12">
+                <div class="col-md-5 offset-md-1 col-sm-12 transition-three">
                     <img class="img-fluid" src="../img/scooterguys.gif" alt="1 million drivers">
                 </div>
-                <div class="col-md-4 offset-md-1 col-sm-12 text-dark pt-4">
+                <div class="col-md-4 offset-md-1 col-sm-12 text-dark pt-4 transition-four">
                     <p class="font-lg neosans-bold">
                         Orders scale from 3000 to 100,000 a day in few months
                     </p>
@@ -132,7 +133,7 @@
                     <img class="img-fluid " src="../img/robot.gif" alt="1 million drivers">
                 </div>
 
-                <div>
+                <div class="d-none d-md-block">
                     <svg class="third-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
 
                         <g id="Layer_2" data-name="Layer 2">
@@ -152,7 +153,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="d-none d-md-block">
                 <svg class="second-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 122">
 
                     <g id="Layer_2" data-name="Layer 2">
@@ -163,7 +164,7 @@
                 </svg>
             </div>
 
-            <div>
+            <div class="d-none d-md-block">
                 <svg class="fourth-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 149">
 
 
@@ -194,7 +195,7 @@
                 <p class="h1 text-green text-center m-0 font-xxl">6666X</p>
                 <p class="h1 text-dark text-center font-md m-0">growth in total order volume</p>
             </div>
-            <div class="mt-5">
+            <div class="mt-5 d-none d-md-block">
                 <svg class="fifth-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 149">
 
                     <g id="Layer_2" data-name="Layer 2">
@@ -338,9 +339,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/media.js"></script>
-    <script src="js/githubrepos.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script src="../js/about-us.js"></script>
+    <script src="../js/media.js"></script>
+    <script src="../js/githubrepos.js"></script>
+    <script>
+        $(document).ready(function () {
+            document.setTimeout(run(), 3000);
+        });
+    </script>
 </body>
 
 </html>
