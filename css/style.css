@@ -117,7 +117,8 @@ footer a:hover {
     color: #fff;
     text-decoration: none;
 }
-.challenging-button:hover{
+
+.challenging-button:hover {
     color: #009944;
     text-decoration: none;
 }
@@ -222,7 +223,7 @@ button.navbar-toggler {
     background-color: #009742;
 }
 
-.green-bg{
+.green-bg {
     background-color: #03ab4e;
 }
 
@@ -367,14 +368,14 @@ button.navbar-toggler {
         font-size: 0.7rem;
     }
     #go-jek-slider .carousel-item .carousel-caption {
-        top: 15%;
+        top: 9%;
         right: 30%;
     }
     #go-jek-slider .carousel-indicators {
-        top: 62%;
+        top: 55%;
     }
     #go-jek-slider .carousel-btn {
-        top: 68%;
+        top: 61%;
         font-family: "NeoSansBold";
         z-index: 99;
     }
@@ -392,7 +393,13 @@ button.navbar-toggler {
     }
     .absolute-caption {
         position: absolute;
-        bottom: 40%;
+        bottom: 30%;
+        left: 1;
+        right: 10%;
+    }
+    .absolute-caption-button {
+        position: absolute;
+        bottom: 50%;
         left: 1;
         right: 10%;
     }
@@ -415,6 +422,9 @@ html {
     }
     .first-section {
         margin-top: 48px;
+    }
+    .about-us-container-height {
+        height: 1600px;
     }
 }
 
@@ -442,6 +452,9 @@ html {
         right: 36%;
         top: 40%;
     }
+    .about-us-container-height {
+        height: 1350px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -463,6 +476,9 @@ html {
         right: 36%;
         top: 44%;
     }
+    .about-us-container-height {
+        height: 1650px;
+    }
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
@@ -480,14 +496,17 @@ html {
     .third-path {
         position: absolute;
         width: 19%;
-        top: 36%;
-        right: 10%;
+        top: 37%;
+        right: 9%;
     }
     .fourth-path {
         position: absolute;
         width: 1%;
         right: 36%;
-        bottom: 49%;
+        bottom: 60%;
+    }
+    .about-us-container-height {
+        height: 1900px;
     }
 }
 
@@ -517,34 +536,39 @@ li {
     stroke-width: 14px;
 }
 
-.transition-one{
-  
-    opacity: 0;
+.transition-effect {
+    display: none;
 }
 
-.transition-two{
-    opacity: 0;
+.transition-effect-text {
+    display: none;
 }
 
-.transition-three{
-    opacity: 0;
-}
-.transition-four{
-    opacity: 0;
+.first-path {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
 }
 
-.first-path{
+.second-path {
     stroke-dasharray: 500;
+    stroke-dashoffset: 500;
 }
-.second-path{
-    stroke-dasharray: 500;
-}
-.third-path{
+
+.third-path {
     stroke-dasharray: 400;
+    stroke-dashoffset: 400;
 }
-.fourth-path{
+
+.fourth-path {
     stroke-dasharray: 200;
+    stroke-dashoffset: 200;
 }
-.fifth-path{
+
+.fifth-path {
     stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+}
+
+.fade-right {
+    display: none;
 }
