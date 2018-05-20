@@ -117,8 +117,7 @@ footer a:hover {
     color: #fff;
     text-decoration: none;
 }
-
-.challenging-button:hover {
+.challenging-button:hover{
     color: #009944;
     text-decoration: none;
 }
@@ -223,7 +222,7 @@ button.navbar-toggler {
     background-color: #009742;
 }
 
-.green-bg {
+.green-bg{
     background-color: #03ab4e;
 }
 
@@ -397,7 +396,7 @@ button.navbar-toggler {
         left: 1;
         right: 10%;
     }
-    .absolute-caption-button {
+    .absolute-caption-button{
         position: absolute;
         bottom: 50%;
         left: 1;
@@ -423,8 +422,9 @@ html {
     .first-section {
         margin-top: 48px;
     }
-    .about-us-container-height {
-        height: 1600px;
+
+    .about-us-container-height{
+        height: 1800px;
     }
 }
 
@@ -452,7 +452,7 @@ html {
         right: 36%;
         top: 40%;
     }
-    .about-us-container-height {
+    .about-us-container-height{
         height: 1350px;
     }
 }
@@ -476,7 +476,7 @@ html {
         right: 36%;
         top: 44%;
     }
-    .about-us-container-height {
+    .about-us-container-height{
         height: 1650px;
     }
 }
@@ -505,7 +505,7 @@ html {
         right: 36%;
         bottom: 60%;
     }
-    .about-us-container-height {
+    .about-us-container-height{
         height: 1900px;
     }
 }
@@ -536,39 +536,37 @@ li {
     stroke-width: 14px;
 }
 
-.transition-effect {
+
+
+.transition-effect{
     display: none;
 }
 
-.transition-effect-text {
+.transition-effect-text{
     display: none;
 }
 
-.first-path {
+.first-path{
     stroke-dasharray: 700;
     stroke-dashoffset: 700;
 }
-
-.second-path {
+.second-path{
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
 }
-
-.third-path {
+.third-path{
     stroke-dasharray: 400;
     stroke-dashoffset: 400;
 }
-
-.fourth-path {
+.fourth-path{
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+}
+.fifth-path{
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
 }
 
-.fifth-path {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-}
-
-.fade-right {
+.fade-right{
     display: none;
 }
