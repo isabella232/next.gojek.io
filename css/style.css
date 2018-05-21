@@ -342,7 +342,8 @@ button.navbar-toggler {
 
 /*Open source styles Start*/
 
-.opensource-card-title {
+.opensource-card-title,
+.opensource-card-description {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -350,10 +351,7 @@ button.navbar-toggler {
 }
 
 .opensource-card-description {
-    overflow: hidden;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
 }
 
 /*open source styles End*/
