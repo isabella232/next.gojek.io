@@ -30,7 +30,7 @@ function run() {
 
     $('.fifth-path').css("stroke-dashoffset", "0");
     $('.fifth-path').css("transition", "2s");
-    $('.fifth-path').css("transition-delay", "16s");
+    $('.fifth-path').css("transition-delay", "15s");
 
 };
 

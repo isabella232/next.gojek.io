@@ -46,12 +46,24 @@ body {
     font-family: "NeoSansBold", sans-serif;
 }
 
+.font-xs-s{
+    font-size: 0.87rem;
+}
+
 .font-xs {
     font-size: 0.94rem;
 }
 
+.font-xs-l{
+    font-size: 1rem;
+}
+
 .font-sm {
     font-size: 1.125rem;
+}
+
+.font-sm-l{
+    font-size: 1.25rem;
 }
 
 .font-md {
@@ -80,6 +92,10 @@ body {
 
 .font-xl-x {
     font-size: 2.6rem;
+}
+
+.font-xxl-x{
+    font-size: 3rem;
 }
 
 .font-xxl {
@@ -326,7 +342,8 @@ button.navbar-toggler {
 
 /*Open source styles Start*/
 
-.opensource-card-title {
+.opensource-card-title,
+.opensource-card-description {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -334,10 +351,7 @@ button.navbar-toggler {
 }
 
 .opensource-card-description {
-    overflow: hidden;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
 }
 
 /*open source styles End*/
@@ -429,7 +443,7 @@ html {
     }
 
     .about-us-container-height{
-        height: 1800px;
+        height: 1500px;
     }
 }
 
@@ -458,7 +472,7 @@ html {
         top: 40%;
     }
     .about-us-container-height{
-        height: 1350px;
+        height: 1300px;
     }
 }
 
@@ -511,7 +525,7 @@ html {
         bottom: 60%;
     }
     .about-us-container-height{
-        height: 1900px;
+        height: 1950px;
     }
 }
 
