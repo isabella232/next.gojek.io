@@ -46,12 +46,24 @@ body {
     font-family: "NeoSansBold", sans-serif;
 }
 
+.font-xs-s{
+    font-size: 0.87rem;
+}
+
 .font-xs {
     font-size: 0.94rem;
 }
 
+.font-xs-l{
+    font-size: 1rem;
+}
+
 .font-sm {
     font-size: 1.125rem;
+}
+
+.font-sm-l{
+    font-size: 1.25rem;
 }
 
 .font-md {
@@ -80,6 +92,10 @@ body {
 
 .font-xl-x {
     font-size: 2.6rem;
+}
+
+.font-xxl-x{
+    font-size: 3rem;
 }
 
 .font-xxl {
