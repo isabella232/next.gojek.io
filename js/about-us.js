@@ -25,7 +25,7 @@ function run() {
 
     $('.fourth-path').css("stroke-dashoffset", "0");
     $('.fourth-path').css("transition", "2s");
-    $('.fourth-path').css("transition-delay", "14s");
+    $('.fourth-path').css("transition-delay", "12s");
 
 
     $('.fifth-path').css("stroke-dashoffset", "0");
