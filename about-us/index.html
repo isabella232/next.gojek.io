@@ -59,7 +59,7 @@
                     <a class="nav-link" href="/blog/">Blog</a>
                 </li>
                 <li class="mx-3 nav-item">
-                    <a class="btn btn-success rounded-1 neosans-bold navbar-padding" href="/careers/">Apply</a>
+                    <a class="btn btn-success rounded-1 neosans-bold green-apply-btn" href="/careers/">Apply</a>
                 </li>
             </ul>
         </div>
@@ -111,7 +111,7 @@
 
             <div class="d-flex flex-row flex-wrap justify-content-start align-items-center pt-5 ">
                 <div class="col-md-5 offset-md-1 col-sm-12 transition-effect">
-                    <img class="img-fluid" src="../img/scooter-dudes.gif" alt="1 million drivers">
+                    <img class="img-fluid" src="../img/scooter-dudes-noloop.gif" alt="1 million drivers">
                 </div>
                 <div class="col-md-4 offset-md-1 col-sm-12 text-dark pt-4 transition-effect fade-right">
                     <p class="font-lg neosans-bold">
@@ -196,7 +196,7 @@
                 <p class="h1 text-dark text-center font-lg m-0">
                     In the last 36 months
                 </p>
-                <p class="h1 text-green text-center m-0 font-xxl count"></p>
+                <p class="h1 text-green text-center m-0 font-xxl count">3 </p>
                 <p class="h1 text-dark text-center font-lg m-0">growth in total order volume</p>
             </div>
 
@@ -225,7 +225,7 @@
                     <h3 class="h3 text-center font-xl text-white neosans-bold">Want to make the world a better place
                         <span>?</span> We’ve got the Source Code!</h3>
                     <div class="text-center pt-3">
-                        <button style="border: 3px solid white" type="button" class="rounded-0 text-cener btn btn-success neosans-bold text-uppercase green-apply-btn">Apply</button>
+                        <a href="/careers/" class=" text-center btn bg-white text-green neosans-bold text-uppercase my-1 font-md challenging-button banner-apply-btn">APPLY NOW </a>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <div class="row">
+                    <div class="row font-xs">
                         <div class="col-md-3 d-none d-md-block">
                             <ul class="list-unstyled">
                                 <li>
@@ -255,10 +255,10 @@
                             <ul class="list-unstyled">
 
                                 <li class="pb-4">
-                                    <a class="font-xs" href="javascript:void(0);">About</a>
+                                    <a href="javascript:void(0);">About</a>
                                 </li>
                                 <li class="pb-4">
-                                    <a class="font-xs" href="/careers/">Careers</a>
+                                    <a href="/careers/">Careers</a>
                                 </li>
                                 <li class="pb-4">
                                     <a href="/open-source/">Open Source</a>
@@ -280,8 +280,8 @@
                         </div>
                         <div class="col-md-3 d-none d-md-block">
                             <ul class="list-unstyled">
-                                <li class="pb-4 text-center">
-                                    <a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-4" href="/careers/">Apply</a>
+                                <li class="pb-4 text-center mr-2">
+                                    <a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-lg-5 px-md-4" href="/careers/">Apply</a>
                                 </li>
                                 <li class="pb-4">
                                     <a class="text-opacity font-xs" href="/">Open Positions</a>
@@ -360,7 +360,7 @@
                     if (i == 4) {
                         $(".transition-effect-text").delay(i * 3000).fadeIn(100);
                     }
-                    setTimeout(countNumbers, 14000);
+                    setTimeout(countNumbers, 15000);
                 });
                 $(".fade-right").each(function (i, e) {
                     console.log(i)
@@ -374,12 +374,11 @@
         });
 
         function countNumbers() {
-            console.log("77777")
             $('.count').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: 6666,
                 }, {
-                    duration: 500,
+                    duration: 1000,
                     easing: 'swing',
                     step: function (now) {
                         $(this).text(Math.ceil(now) + 'x');

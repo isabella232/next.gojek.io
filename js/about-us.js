@@ -10,7 +10,7 @@ function run() {
     // $('.transition-four').css("transition-delay", "6s");
     $('.first-path').css("stroke-dashoffset", "0");
     $('.first-path').css("transition", "2s");
-    $('.first-path').css("transition-delay", "3s");
+    $('.first-path').css("transition-delay", "4s");
 
 
     $('.second-path').css("stroke-dashoffset", "0");

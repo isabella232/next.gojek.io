@@ -14,7 +14,7 @@
 
 	<!-- Bootstrap assets -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-	    crossorigin="anonymous">
+	  crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,7 +34,7 @@
 			<img class="header-logo-width" src="../img/gojek-logo.png" alt="GO-JEK_logo" title="GO-JEK">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
-		    aria-expanded="false" aria-label="Toggle navigation">
+		  aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -58,7 +58,7 @@
 					<a class="nav-link" href="/blog/">Blog</a>
 				</li>
 				<li class="mx-3 nav-item">
-					<a class="btn btn-success rounded-1 neosans-bold navbar-padding" href="/careers/">Apply</a>
+					<a class="btn btn-success rounded-1 neosans-bold green-apply-btn" href="/careers/">Apply</a>
 				</li>
 			</ul>
 		</div>
@@ -72,16 +72,21 @@
 				<div class="card-body mt-5 justify-content-around ">
 					<div class="row justify-content-end pt-5">
 						<h1 class="col-md-10  pt-5 card-title text-white neosans-bold font-xl-x">Come Work
-							<s>For</s>
+							<!-- <s class="strike-text"> -->
+								<span class="text-white strikediag">
+									For
+								</span>
+							<!-- </s> -->
+
 							<br> With Us
 							<br>
 							<span class="font-neosans">Subtle. But Important.</span>
 					</div>
 					<div class="row justify-content-end">
 						<div class="col-md-10 pb-2">
-							<a href="/careers/" class="banner-apply-btn text-center btn bg-white text-green neosans-bold text-uppercase py-2 my-1 font-md">APPLY NOW </a>
+							<a href="/careers/" class="banner-apply-btn text-center btn bg-white text-green neosans-bold text-uppercase  my-1 font-md challenging-button">APPLY NOW </a>
 							<br>
-							<button class="banner-apply-btn btn btn-outline-light py-2 my-1 font-md neosans-bold">VIEW ALL POSITIONS </button>
+							<a data-scroll href="#viewPosition" class="banner-apply-btn btn btn-outline-light my-1 font-md neosans-bold">VIEW ALL POSITIONS </a>
 						</div>
 					</div>
 				</div>
@@ -102,7 +107,7 @@
 					</div>
 					<div class="row d-md-none">
 						<div class="col-md-10  px-0">
-							<a href="/careers/" class="banner-apply-btn text-center btn btn-success text-white neosans-bold text-uppercase py-2 my-1">APPLY NOW </a>
+							<a href="/careers/" class="banner-apply-btn  text-center btn btn-success text-white neosans-bold text-uppercase py-2 my-1">APPLY NOW </a>
 							<br>
 							<button class="banner-apply-btn btn btn-outline-light all-positions-btn py-2 my-1">VIEW ALL POSITIONS </button>
 						</div>
@@ -217,10 +222,17 @@
 			<div class="row d-none d-md-block pb-5">
 				<div class="col-md-11 px-0  main-carousel">
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators careers-carousel-indicators  justify-content-end">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						</ol>
+
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<div class="col-lg-3 col-md-4 carousel-caption  carousel-head">
-									<h1 class="light-green-bg font-xl-l neosans-bold py-5 text-white ">Employee Stories</h1>
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3 text-white ">Employee Stories</h1>
 								</div>
 								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
 								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
@@ -233,8 +245,8 @@
 							</div>
 
 							<div class="carousel-item">
-								<div class="col-lg-3 col-md-4 carousel-caption  carousel-head">
-									<h1 class="light-green-bg font-xl-l neosans-bold py-5 text-white">Employee Stories</h1>
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3  text-white">Employee Stories</h1>
 								</div>
 								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
 								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
@@ -245,21 +257,11 @@
 									<h5 class="text-green neosans-bold">Shobit</h5>
 								</div>
 
-								<!-- <div class="emp-testimonial carousel-caption text-left  d-md-none ">
-                                    <small>
-                                        <p class="text-white">GO-JEK is multiple startups in one. We have the equivalents of foodtech, fintech, ride-sharing,  home services, logistics and more. Because of the sheer size and scale we operate...</p>
-                                    </small>
-                                    <h6 class="text-green">Shobit</h6>
-                                </div> -->
-
-								<!-- <div class="carousel-caption-small d-sm-block d-md-none">
-                                    Employee stories
-                                </div> -->
 							</div>
 
 							<div class="carousel-item">
-								<div class="col-lg-3 col-md-4 carousel-caption  carousel-head">
-									<h1 class="light-green-bg font-xl-l neosans-bold py-5 text-white">Employee Stories</h1>
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3 text-white">Employee Stories</h1>
 								</div>
 								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
 								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
@@ -270,24 +272,14 @@
 									<h5 class="text-green neosans-bold">Divya</h5>
 								</div>
 
-								<!-- <div class="emp-testimonial carousel-caption text-left  d-md-none">
-                                    <small>
-                                        <p class="text-white">I’ve had the freedom to experiment with new ideas at GO-JEK. In the process I’ve learnt to convert raw thoughts into shaping the end product. To be given this platform to...</p>
-                                    </small>
-                                    <h6 class="text-green">Divya</h6>
-                                </div> -->
-
-								<!-- <div class="carousel-caption-small  d-sm-block d-md-none">
-                                    Employee stories
-                                </div> -->
 							</div>
 
 							<div class="carousel-item">
-								<div class="col-lg-3 col-md-4 carousel-caption  carousel-head">
-									<h1 class="light-green-bg font-xl-l neosans-bold py-5 text-white">Employee Stories</h1>
+								<div class="col-lg-3 col-md-3 carousel-caption carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3  text-white">Employee Stories</h1>
 								</div>
 								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
-								<div class="emp-testimonial carousel-caption text-left  p-5 font-xs-l">
+								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
 									<p class="text-white emp-testimonial-text">I'm actually blessed to be part of an org that has an innovative and inclusive culture. Our attitude is framed around
 										solving difficult problems and inclusivity. This diversity of thought cuts across gender, ethnicities, and backgrounds
 										allowing us to move fast and think different. I love that fact we are a very distributed and culturally dispersed
@@ -295,16 +287,6 @@
 									<h5 class="text-green neosans-bold">Crystal</h5>
 								</div>
 
-								<!--  <div class="emp-testimonial carousel-caption text-left  d-md-none">
-                                        <small>
-                                            <p class="text-white">I'm actually blessed to be part of an org that has an innovative and inclusive culture. Our attitude is framed around solving difficult problems and inclusivity This diversity of thought cuts...</p>
-                                        </small>
-                                        <h6 class="text-green">Crystal</h6>
-                                    </div> -->
-
-								<!-- <div class="carousel-caption-small  d-sm-block d-md-none">
-                                        Employee stories
-                                    </div> -->
 							</div>
 
 						</div>
@@ -375,7 +357,7 @@
 			<!-- end of Employee stories -->
 
 			<!-- Open Positions -->
-			<div class="container font-neosans">
+			<div id="viewPosition" class="container font-neosans">
 				<div class="row justify-content-lg-start justify-content-center">
 					<h1 class="h1 font-xl-l pt-5">Open Positions</h1>
 				</div>
@@ -469,7 +451,7 @@
 					</a>
 				</div>
 				<div class="col-md-8">
-					<div class="row">
+					<div class="row font-xs">
 						<div class="col-md-3 d-none d-md-block">
 							<ul class="list-unstyled">
 								<li>
@@ -481,10 +463,10 @@
 							<ul class="list-unstyled">
 
 								<li class="pb-4">
-									<a class="font-xs" href="/about-us/">About</a>
+									<a href="/about-us/">About</a>
 								</li>
 								<li class="pb-4">
-									<a class="font-xs" href="#">Careers</a>
+									<a href="#">Careers</a>
 								</li>
 								<li class="pb-4">
 									<a href="/open-source/">Open Source</a>
@@ -506,8 +488,8 @@
 						</div>
 						<div class="col-md-3 d-none d-md-block">
 							<ul class="list-unstyled">
-								<li class="pb-4 text-center">
-									<a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-4" href="/careers/">Apply</a>
+								<li class="pb-4 text-center mr-2">
+									<a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-lg-5 px-md-4" href="/careers/">Apply</a>
 								</li>
 								<li class="pb-4">
 									<a class="text-opacity font-xs" href="/">Open Positions</a>
@@ -564,18 +546,23 @@
 
 	<!-- JS files -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	    crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	    crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-	    crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-	    crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script type="text/javascript" src="../js/smooth-scroll.js"></script>
 
 	<script>
+		// Smooth scroll initialization
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+
 		$(".go-jek-slider").slick({
 			dots: false,
 			infinite: true,

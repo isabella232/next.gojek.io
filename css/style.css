@@ -126,6 +126,13 @@ body {
 .banner-apply-btn {
     border-radius: 0.5rem;
     width: 16rem;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+.green-apply-btn{
+    padding-top: 7.25px;
+    padding-bottom: 5.25px;
 }
 
 footer a,
@@ -158,11 +165,6 @@ footer .list-inline-item a {
 
 button.navbar-toggler {
     border: none;
-}
-
-.navbar-padding{
-    padding-top: 10px;
-    padding-bottom: 10px; 
 }
 
 /* Header Styles */
@@ -198,9 +200,9 @@ button.navbar-toggler {
     left: 10%;
 }
 
-#go-jek-slider .carousel-indicators {
+#go-jek-slider .homepage-carousel-indicators {
     top: 63%;
-   
+    right: 10%;
 }
 
 #go-jek-slider .carousel-btn {
@@ -210,23 +212,32 @@ button.navbar-toggler {
     z-index: 99;
 }
 
-#go-jek-slider .carousel-indicators li {
+#go-jek-slider .homepage-carousel-indicators li,
+#carouselExampleIndicators .careers-carousel-indicators li {
     width: 1rem;
     height: 1rem;
     border-radius: 100%;
     background-color: #fff;
 }
 
-#go-jek-slider .carousel-indicators li.active {
+#go-jek-slider .homepage-carousel-indicators li.active,
+#carouselExampleIndicators .careers-carousel-indicators li.active {
     background-color: #009944;
 }
 
 .carousel-btn .btn {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    
     letter-spacing: 1.5px;
     font-size: 1rem;
 }
+
+.strikediag {
+    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+
+/* .strike-text{
+      color: red;
+  } */
 
 /*Go-Jek facts*/
 
@@ -297,6 +308,10 @@ button.navbar-toggler {
 
 .careers-banner-text {
     font-size: 3rem;
+}
+
+.strike-text {
+    color: red;
 }
 
 .relative-position {
@@ -393,14 +408,18 @@ button.navbar-toggler {
 
 @media only screen and (max-width: 800px) {
     .emp-testimonial {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     #go-jek-slider .carousel-item .carousel-caption {
         top: 9%;
         right: 30%;
     }
-    #go-jek-slider .carousel-indicators {
+    #go-jek-slider .homepage-carousel-indicators {
         top: 55%;
+    }
+    #carouselExampleIndicators .careers-carousel-indicators {
+        top: 50%;
+        right: 21%;
     }
     #go-jek-slider .carousel-btn {
         top: 61%;
@@ -490,6 +509,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+    #carouselExampleIndicators .careers-carousel-indicators {
+        top: 45%;
+        right: 23%;
+    }
     .second-path {
         position: absolute;
         width: 29%;
@@ -516,6 +539,10 @@ html {
 /*  Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+    #carouselExampleIndicators .careers-carousel-indicators {
+        top: 60%;
+        right: 25%;
+    }
     html {
         font-size: 16px;
     }
