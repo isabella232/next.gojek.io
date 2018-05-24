@@ -19,7 +19,7 @@ function getGithubRepo(count , sliderBool) {
                     '<h3 class="neosans-bold mb-0 font-sm-l opensource-card-title">' +
                     '<a class="text-dark" title = "' + data[i].name + '" href="'+data[i].html_url+'" target="_blank">' + data[i].name + '</a>' +
                     '</h3>' +
-                    '<p class="opensource-card-description font-xs-s mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
+                    '<p class="opensource-card-description mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
                     ' </div>' +
                     ' </div>' +
                     '</div>'
