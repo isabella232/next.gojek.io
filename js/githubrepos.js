@@ -1,5 +1,7 @@
 function getGithubRepo(count , sliderBool) {
-    var gojeckAPI = "https://api.github.com/orgs/gojek-engineering/repos";
+    var gojeckAPI = "https://api.github.com/orgs/gojektech/repos";
+
+
     $.getJSON(gojeckAPI,
         {
             format: "json"
