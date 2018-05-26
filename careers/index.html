@@ -2,455 +2,615 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap assets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap assets -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	  crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
-    <link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>GO-JEK</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+	<link rel="stylesheet" href="../css/custom.css">
+
+	<title>GO-JEK Careers</title>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light neosans-bold text-uppercase">
-        <a class="navbar-brand" href="#">
-            <img src="../img/gojek-logo.png" alt=" GO-JEK logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+	<!-- Navigation -->
+	<nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light neosans-bold text-uppercase px-4 py-2">
+		<a class="navbar-brand" href="/">
+			<img class="header-logo-width" src="../img/gojek-logo.png" alt="GO-JEK_logo" title="GO-JEK">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+		  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="careers">Careers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/open-source">Open Source</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-light rounded-button apply-btn-sm text-white" href="/">Apply</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- End navigation -->
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+				<li class="mx-3 nav-item ">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li class="mx-3 nav-item active">
+					<a class="nav-link" href="javascript:void(0);">Careers
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="mx-3 nav-item">
+					<a class="nav-link" href="/about-us/">About</a>
+				</li>
+				<li class="mx-3 nav-item">
+					<a class="nav-link" href="/open-source/">Open Source</a>
+				</li>
+				<li class="mx-3 nav-item">
+					<a class="nav-link" href="/blog/">Blog</a>
+				</li>
+				<li class="mx-3 nav-item">
+					<a class="btn btn-success rounded-1 neosans-bold green-apply-btn" href="/careers/">Apply</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- End navigation -->
 
-<!-- Main Banner -->
-<section>
-    <div class="d-flex flex-wrap">
-        <div class="careers-banner background-img card col-md border-0 rounded-0">
-            <div class="card-body mt-5 justify-content-around ">
-                <div class="row justify-content-end">
-                    <h1 class="col-lg-10 pt-5 card-title text-white neosans-bold careers-banner-text">Love a Challenge? You’ll Love us!</h1>
-                    <p class="col-lg-10 text-white pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat est erat, eget auctor arcu tincidunt at. </p>
+	<!-- Main Banner -->
+	<section class="first-section">
+		<div class="d-flex flex-wrap">
+			<div class="careers-banner background-img card col-md border-0 rounded-0 d-none d-md-block">
+				<div class="card-body mt-5 justify-content-around ">
+					<div class="row justify-content-end pt-5">
+						<h1 class="col-md-10  pt-5 card-title text-white neosans-bold font-xl-x">Come Work
+							<!-- <s class="strike-text"> -->
+								<span class="text-white strikediag">
+									For
+								</span>
+							<!-- </s> -->
 
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 pb-2 px-0">
-                        <div class="row">
-                            <div class="col-lg-10 col-md-12 col-sm-8">
-                                <button class="btn btn-block all-positions-btn p-lg-x-4 font-lg text-white text-center apply-btn text-uppercase neosans-bold">ALL OPEN POSITIONS </button>
-                        
-                                <button class="light-green-bg btn btn-block px-4 font-lg apply-btn  text-white text-center text-uppercase neosans-bold">Apply </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md bg-dark border-0 rounded-0 go-jek-work background-img">
+							<br> With Us
+							<br>
+							<span class="font-neosans">Subtle. But Important.</span>
+					</div>
+					<div class="row justify-content-end">
+						<div class="col-md-10 pb-2">
+							<a href="/careers/" class="custom-btn text-center btn bg-white text-green neosans-bold text-uppercase  my-1 font-md challenging-button">APPLY NOW </a>
+							<br>
+							<a data-scroll href="#viewPosition" class="custom-btn btn btn-outline-light my-1 font-md neosans-bold">VIEW ALL POSITIONS </a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        </div> 
-    </div>
-</section>
-<!-- end main banner -->
+			<div class="card col-md bg-dark border-0 rounded-0 go-jek-work go-jek-work-gradient background-img relative-position">
 
-<!-- Behid the scenes section -->
-<section class="py-5">
-    <h1 class="h2 text-center py-3 font-bold">Behind the Scenes</h1>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7 pb-5 ">
-                <p class="text-center">
-                    We are not your conventional office. We don’t have timings and we certainly don’t do the mundane 9-5. Coding is at our heart and we love a hands-on approach. So, you code. Your Boss codes. His Boss codes. And maybe the office boy codes too.  Here, Leaders are built on reputation and skill sets, not titles and designations. We let our work define us rather than our age. We’ve seen leaders as young as 24 years and as old as 50. 
-                </p>
+				<!-- Mobile view careers banner  -->
+				<div class="card-body text-center d-md-none mt-5 go-jek-work-text">
+					<div class="row">
+						<p class="col-lg-10 card-title text-white neosans-bold font-lg-x">
+							Come Work
+							<s>For</s>
+							<br> With Us
+							<br>
+							<span class="font-neosans">Subtle. But Important.</span>
+						</p>
+					</div>
+					<div class="row d-md-none">
+						<div class="col-md-10  px-0">
+							<a href="/careers/" class="custom-btn  text-center btn btn-success text-white neosans-bold text-uppercase py-2 my-1">APPLY NOW </a>
+							<br>
+							<button class="custom-btn btn btn-outline-light all-positions-btn py-2 my-1">VIEW ALL POSITIONS </button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- end main banner -->
 
-                <p class="mb-0 pt-4 text-center text-uppercase text-black font-weight-bold" style="letter-spacing: 1.6px;">We are Indonesia’s largest &amp; fastest growing tech unicorn.</p>
-                <h4 class="pt-2 text-green neosans-bold text-center"><u>And we’re looking for people like you.</u></h4>
-            </div>
-                
-            <div class="embed-responsive embed-responsive-21by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L5FIAniosZU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Behind the scenes section -->
+	<!-- Behind the scenes section -->
+	<section class="py-5">
+		<h1 class="h2 text-center py-3 font-bold font-xl-l">Behind the Scenes</h1>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 pb-5">
+					<p class="text-center font-xs-l font-neosans">
+						We don't have "office timings". We're not a 9-5 "job". Leaders go only by reputation, not titles. Leaders code. Everyone
+						codes. We believe leaders who code are better judges of technical skill in people. Leaders are 24 years old or 50.
+						Our average age is 29. Age doesn’t define leadership.
+					</p>
+				</div>
 
-<section>
-    <div class="container">
-        <div class="text-center">
-            <h2 class="h2 text-uppercase mb-4">The GO-JEK Advantage</h2>
-        </div>
-    </div>
-    <div class="container-fluid">
-            <div class="row go-jek-slider">
-                <div class=" card border-0">
-                    <img class="card-img-top rounded-0" src="../img/group-1.png" alt="Go-JEK advantage">
-                    <div class="card-body px-0">
-                        <p>Different programmers have
-                        different styles of coding. One would put curly braces at the same line as function names, while others would…</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="card-img-top rounded-0" src="../img/group-1.png" alt="GO-JEK advantage">
-                    <div class="card-body px-0">
-                        <p>Different programmers have
-                        different styles of coding. One would put curly braces at the same line as function names, while others would…</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="card-img-top rounded-0" src="../img/group-1.png" alt="GO-JEK Advantage">
-                    <div class="card-body px-0">
-                        <p>Here’s how we radically changed our iOS codebase while processing 100+ million orders every month</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="card-img-top rounded-0" src="../img/group-1.png" alt="GO-JEK Advantage">
-                    <div class="card-body px-0">
-                        <p>Here’s how we radically changed our iOS codebase while processing 100+ million orders every month</p>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <img class="card-img-top rounded-0" src="../img/group-1.png" alt="GO-JEK Advantage">
-                    <div class="card-body px-0">
-                        <p>Here’s how we radically changed our iOS codebase while processing 100+ million orders every month</p>
-                    </div>
-                </div>
-            </div>
+				<div class="embed-responsive embed-responsive-21by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L5FIAniosZU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Behind the scenes section -->
 
-        </div>
-    </section>
+	<!-- Go-Jek Advantage section -->
+	<section class="py-5">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="h2 mb-4 font-xl-l">The GO-JEK Advantage</h2>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row go-jek-slider text-center">
+				<div class=" card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP1-min.jpg" alt="Go-JEK advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>An employee can claim upto Rs.12000 annually towards expenses related to health and wellness. For example: Gym membership,
+							buying a cycle, saunas and massages, sports equipment etc...
+						</p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP2-min.jpg" alt="GO-JEK advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>Books can be reimbursed for upto 6,000 and more for technical ones if required
+						</p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP3-min.jpg" alt="GO-JEK Advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>Broadband and mobile bill will be reimbursed
+						</p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP4-min.jpg" alt="GO-JEK Advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>Unlimited sick leaves - Because we trust our employees, because we have 18 products and employees are micro-entreprenuers
+							owning the product
+						</p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP5-min.jpg" alt="GO-JEK Advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>All employees are encouraged to travel to Jakarta to get a feel of the product, its use cases and understand what makes
+							GO-JEK a verb in Indonesia
+						</p>
+					</div>
+				</div>
+				<div class=" card border-0">
+					<img class="card-img-top rounded-0" src="../img/EVP6-min.jpg" alt="Go-JEK advantage">
+					<div class="font-xs-l card-body px-2">
+						<p>No office timings; the team collectively decides what works for them. No dress code, an atmosphere of independence
+							in decision-making
 
-    <section class="gray-bg py-5">
-        <h1 class="font-xl text-black py-3 text-center" style="font-family: NeoSansMedium">At GO-JEK, we fail a lot. <br>In fact, we love failing.</h1>
-        <div class="container gray-bg">
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <p class="text-center pb-3">
-                        Because we believe that failing is learning. And if we’re not failing, we’re just not doing it right. We are a global unit. An amalgamation of sorts. We have a cross-pollination of ideas from Singapore, Indonesia and India. Different cultures, different mindsets,
-                        unified in solving problems and learning along the way.
-                    </p>
-                    <p  style="letter-spacing: 1.6px;" class="text-uppercase text-green text-center neosans-bold mb-0">Also, at GO-JEK we embrace chaos </p>
-                    <h4 class="text-black neosans-bold h4 text-center">Because you can’t build if you can't expect the unexpected. </h4>
-                </div>
-            </div>
-        </div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Go-Jek Advantage section -->
 
-        <div class="container-fluid employee-stories">
-            <div class="row">
-                <div class="col-md-11 px-0 main-carousel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="col-lg-3 col-md-4 carousel-caption d-none d-md-block carousel-head">
-                                    <h1 class="light-green-bg h1 neosans-bold py-5 text-white">Employee Stories</h1>
-                                </div>
-                                <img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
-                                <div class="emp-testimonial carousel-caption text-left d-none d-md-block p-5">
-                                    <p class="text-white">This unbridled energy of solving complex problems is what makes GO-JEK a great place to work. It’s the challenge of how to keep a large company 
-                                    functioning like a startup. And I think GO-JEK is doing a phenomenal job at this.</p>
-                                    <h5 class="text-green">Head</h5>
-                                </div>
+	<!-- Employee Stories section -->
+	<section class="gray-bg py-5">
+		<h1 class="font-xl-l text-black py-3 text-center neosans-bold">At GO-JEK, we fail a lot.
+			<br>In fact, we love failing.</h1>
+		<div class="container gray-bg">
+			<div class="row justify-content-center">
+				<div class="col-md-7">
+					<p class="font-xs-l text-center pb-3">
+						Because we believe that failing is learning. And if we’re not failing, we’re just not doing it right. We are a global unit.
+						An amalgamation of sorts. We have a cross-pollination of ideas from Singapore, Indonesia and India. Different cultures,
+						different mindsets, unified in solving problems and learning along the way.
+					</p>
+				</div>
+			</div>
+		</div>
 
-                                <div class="carousel-caption d-sm-block d-md-none">
-                                    Employee stories
-                                </div>
-                            </div>
+		<div class="container-fluid employee-stories">
+			<div class="row d-none d-md-block pb-5">
+				<div class="col-md-11 px-0  main-carousel">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators careers-carousel-indicators  justify-content-end">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						</ol>
 
-                            <div class="carousel-item">
-                                <div class="col-lg-3 col-md-4 carousel-caption d-none d-md-block carousel-head">
-                                    <h1 class="light-green-bg h1 neosans-bold py-5 text-white">Employee Stories</h1>
-                                </div>
-                                <img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
-                                <div class="emp-testimonial carousel-caption text-left d-none d-md-block p-5">
-                                    <p class="text-white">This unbridled energy of solving complex problems is what makes GO-JEK a great place to work. It’s the challenge of how to keep a large company 
-                                    functioning like a startup. And I think GO-JEK is doing a phenomenal job at this.</p>
-                                    <h5 class="text-green">Head</h5>
-                                </div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3 text-white ">Employee Stories</h1>
+								</div>
+								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
+								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
+									<p class="text-white emp-testimonial-text ">The journey as a designer for GO-JEK has been a mission in translating data-driven findings into insights. I love
+										digging into problems with no prior experience or right answers, and GO-JEK gives me the liberty to do this. Walking
+										into these unknown paths has helped me learn, grow and mould myself into a better designer. What we do improves
+										and changes the lives of 261+ million people and that’s and exhilarating feeling.</p>
+									<h5 class="text-green neosans-bold">Fatema</h5>
+								</div>
+							</div>
 
-                                <div class="carousel-caption d-sm-block d-md-none">
-                                    Employee stories
-                                </div>
-                            </div>
+							<div class="carousel-item">
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3  text-white">Employee Stories</h1>
+								</div>
+								<img class="d-block w-100" src="../img/Shobit.jpg" alt="Employee testimonials">
+								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
+									<p class="text-white emp-testimonial-text">GO-JEK is multiple startups in one. We have the equivalents of foodtech, fintech, ride-sharing, home services, logistics
+										and more. Because of the sheer size and scale we operate in, it's unlike any other startup. You get to ideate with
+										multiple teams, empowered to take critical product decisions and work with a team that has ingrained the philosophy
+										of working with a 'lean engineering mindset’. </p>
+									<h5 class="text-green neosans-bold">Shobit</h5>
+								</div>
 
-                            <div class="carousel-item">
-                                <div class="col-lg-3 col-md-4 carousel-caption d-none d-md-block carousel-head">
-                                    <h1 class="light-green-bg h1 neosans-bold py-5 text-white">Employee Stories</h1>
-                                </div>
-                                <img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
-                                <div class="emp-testimonial carousel-caption text-left d-none d-md-block p-5">
-                                    <p class="text-white">This unbridled energy of solving complex problems is what makes GO-JEK a great place to work. It’s the challenge of how to keep a large company 
-                                    functioning like a startup. And I think GO-JEK is doing a phenomenal job at this.</p>
-                                    <h5 class="text-green">Head</h5>
-                                </div>
+							</div>
 
-                                <div class="carousel-caption d-sm-block d-md-none">
-                                    Employee stories
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="col-md-11 px-0 d-none d-md-block background-carousel">
-                    <div id="carouselExampleIndicatorstest" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" >
-                                <img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
-                            </div>
-                    </div>
-                </div>     
-            </div>       
-        </div>
+							<div class="carousel-item">
+								<div class="col-lg-3 col-md-3 carousel-caption  carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3 text-white">Employee Stories</h1>
+								</div>
+								<img class="d-block w-100" src="../img/Divya.jpg" alt="Employee testimonials">
+								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
+									<p class="text-white emp-testimonial-text">I’ve had the freedom to experiment with new ideas at GO-JEK. In the process I’ve learnt to convert raw thoughts
+										into shaping the end product. To be given this platform to experiment and learn with some of the brightest minds
+										is an enticing opportunity. So much so, I love to talk about these experiences outside of work to friends and family
+										alike - and that shows how rich the culture is.</p>
+									<h5 class="text-green neosans-bold">Divya</h5>
+								</div>
 
-        <div class="container pt-5">
-            <h1 class="h1 pt-5">Open Positions</h1>
+							</div>
 
-            <div class="mt-5 card border-0 mb-1 rounded-0">
-                <div class="open-positions-card card-body row">
-                    <h5 class="h4 col-md-4 text-black">Lead Software Engineer</h4>
-                        <p class=" col-md-4">Bangalore, Jakarta, Singapore</p>
-                        <a href="#" class="col-md-4 text-success text-right"> apply</a>
-                    </div>
-                </div>
+							<div class="carousel-item">
+								<div class="col-lg-3 col-md-3 carousel-caption carousel-head">
+									<h1 class="light-green-bg font-xl-l neosans-bold py-xl-5 py-md-3  text-white">Employee Stories</h1>
+								</div>
+								<img class="d-block w-100" src="../img/Crystal.jpg" alt="Employee testimonials">
+								<div class="emp-testimonial carousel-caption text-left p-5 font-xs-l">
+									<p class="text-white emp-testimonial-text">I'm actually blessed to be part of an org that has an innovative and inclusive culture. Our attitude is framed around
+										solving difficult problems and inclusivity. This diversity of thought cuts across gender, ethnicities, and backgrounds
+										allowing us to move fast and think different. I love that fact we are a very distributed and culturally dispersed
+										team. I've witnessed interesting insights that I never would have without this diversity.</p>
+									<h5 class="text-green neosans-bold">Crystal</h5>
+								</div>
 
-                <div class="card border-0 mb-1 rounded-0">
-                    <div class="open-positions-card card-body row">
-                        <h5 class="h4 col-md-4 text-black">Lead Software Engineer</h4>
-                            <p class=" col-md-4">Bangalore, Jakarta, Singapore</p>
-                            <a href="#" class="col-md-4 text-success text-right"> apply</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card border-0 mb-1 rounded-0">
-                        <div class="open-positions-card card-body row">
-                            <h5 class="h4 col-md-4 text-black">Lead Software Engineer</h4>
-                                <p class=" col-md-4">Bangalore, Jakarta, Singapore</p>
-                                <a href="#" class="col-md-4 text-success text-right"> apply</a>
-                            </div>
-                        </div>
+							</div>
 
-                        <div class="card border-0 mb-1 rounded-0">
-                            <div class="open-positions-card card-body row">
-                                <h5 class="h4 col-md-4 text-black">Lead Software Engineer</h4>
-                                    <p class=" col-md-4">Bangalore, Jakarta, Singapore</p>
-                                    <a href="#" class="col-md-4 text-success text-right"> apply</a>
-                                </div>
-                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-11 px-0 background-carousel">
+					<div id="carouselExampleIndicatorstest" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="../img/employee.png" alt="Employee testimonials">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                            <h5 class="h4 py-5 text-black">Your profile doesn't fit a box? Don't worry. 
-                                <span class="text-green">Drop us a message.</span>
-                            </h5>
+			<!-- Employee stories for mobile view -->
+			<div class="row stories-slider d-md-none text-center text-md-left">
+				<div class="card bg-white">
+					<div class="card-img-top light-green-bg font-xl-l neosans-bold text-white py-2">Employee Stories</div>
+					<img class="card-img-top" src="../img/employee.png" alt="GO-JEK employee Divya">
+					<div class="card-body px-3 font-xs-l">
+						<p class="text-dark">I’ve had the freedom to experiment with new ideas at GO-JEK. In the process I’ve learnt to convert raw thoughts into
+							shaping the end product. To be given this platform to experiment and learn with some of the brightest minds is an
+							enticing opportunity. So much so, I love to talk about these experiences outside of work to friends and family alike
+							- and that shows how rich the culture is.
+						</p>
+						<h5 class="text-green neosans-bold">Divya</h5>
+					</div>
+				</div>
 
-                        </div>
+				<div class="card bg-white">
+					<div class="card-img-top light-green-bg font-xl-l neosans-bold text-white py-2">Employee Stories</div>
+					<img class="card-img-top" src="../img/employee.png" alt="GO-JEK employee Fatema">
+					<div class="card-body px-3 font-xs-l">
+						<p class="text-dark">The journey as a designer for GO-JEK has been a mission in translating data-driven findings into insights. I love digging
+							into problems with no prior experience or right answers, and GO-JEK gives me the liberty to do this. Walking into
+							these unknown paths has helped me learn, grow and mould myself into a better designer. What we do improves and changes
+							the lives of 261+ million people and that’s and exhilarating feeling.</p>
+						<h5 class="text-green neosans-bold">Fatema</h5>
+					</div>
+				</div>
 
-                        <div class="container pb-5">
-                            <div class="row neosans-bold">
-                                <div class="col-md-8 bg-green d-flex align-items-stretch">
-                                    <div class="row py-3">
-                                        <div class="col-md-5">
-                                            <h5 class="p-5 text-white font-xl">Who is a Full Stack Engineer?</h5>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="../img/vector-smart-object-3.png" alt="Full stack engineer" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 d-flex align-items-center" style="background-color: #2a2b2b;">
-                                    <h5 class="text-white font-xl p-5">The GOJEK Hiring Process</h5>
-                                </div>
-                            </div>
+				<div class="card bg-white">
+					<div class="card-img-top light-green-bg font-xl-l neosans-bold text-white py-2">Employee Stories</div>
+					<img class="card-img-top" src="../img/employee.png" alt="GO-JEK employee Shobit">
+					<div class="card-body px-3 font-xs-l">
+						<p class="text-dark">GO-JEK is multiple startups in one. We have the equivalents of foodtech, fintech, ride-sharing, home services, logistics
+							and more. Because of the sheer size and scale we operate in, it's unlike any other startup. You get to ideate with
+							multiple teams, empowered to take critical product decisions and work with a team that has ingrained the philosophy
+							of working with a 'lean engineering mindset’. </p>
+						<h5 class="text-green neosans-bold">Shobit</h5>
+					</div>
+				</div>
 
-                            <div class="row align-items-center py-3" style="background-color: #99d3d8">
-                                <div class="col-md-6">
-                                    <h1 class="h2 p-5 card-title text-white col-md-12">FAQs: How we go about recruiting a developer</h1>
-                                </div>
-                                <div class="col-md-6">
-                                    <img style="max-width: 400px;" class="col-md-12 img-fluid" src="../img/recruiting-devs.png" alt="How we go about recruiting a developer?">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+				<div class="card bg-white">
+					<div class="card-img-top light-green-bg font-xl-l neosans-bold text-white py-2">Employee Stories</div>
+					<img class="card-img-top" src="../img/employee.png" alt="GO-JEK employee Crystal">
+					<div class="card-body px-3 font-xs-l">
+						<p class="text-dark">I'm actually blessed to be part of an org that has an innovative and inclusive culture. Our attitude is framed around
+							solving difficult problems and inclusivity. This diversity of thought cuts across gender, ethnicities, and backgrounds
+							allowing us to move fast and think different. I love that fact we are a very distributed and culturally dispersed
+							team. I've witnessed interesting insights that I never would have without this diversity.</p>
+						<h5 class="text-green neosans-bold">Crystal</h5>
+					</div>
+				</div>
+			</div>
+			<!-- end of Employee stories -->
+
+			<!-- Open Positions -->
+			<div id="viewPosition" class="container font-neosans">
+				<div class="row justify-content-lg-start justify-content-center">
+					<h1 class="h1 font-xl-l pt-5">Open Positions</h1>
+				</div>
+				<div class="mt-4 card border-0 mb-1 rounded-0">
+					<div class="card-body pb-0 row">
+						<h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Lead Software Engineer</h4>
+							<a href="/job-description/" class="h4 col-md-4 font-lg d-md-none text-green">Lead Software Engineer</a>
+
+							<p class=" col-md-4 font-xs-l">Bangalore, Jakarta, Singapore</p>
+							<a href="/job-description/" class="col-md-4 text-success text-right d-none d-md-block"> Apply</a>
+					</div>
+				</div>
+
+				<div class="card border-0 mb-1 rounded-0">
+					<div class="card-body pb-0 row">
+						<h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Android Engineer</h4>
+							<a href="/job-description/" class="h4 col-md-4 font-lg d-md-none text-green">Android Engineer</a>
+							<p class=" col-md-4 font-xs-l">Bangalore, Jakarta, Singapore</p>
+							<a href="/job-description/" class="col-md-4 text-success text-right d-none d-md-block"> Apply</a>
+					</div>
+				</div>
+
+				<div class="card border-0 mb-1 rounded-0">
+					<div class="card-body pb-0 row">
+						<h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">IOS Engineer</h4>
+							<a href="/job-description/" class="h4 col-md-4 font-lg d-md-none text-green">IOS Engineer</a>
+							<p class=" col-md-4 font-xs-l">Bangalore, Jakarta, Singapore</p>
+							<a href="/job-description/" class="col-md-4 text-success text-right d-none d-md-block"> Apply</a>
+					</div>
+				</div>
+
+				<div class="card border-0 mb-1 rounded-0">
+					<div class="card-body pb-0 row">
+						<h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Full Stack Engineer</h4>
+							<a href="/job-description/" class="h4 col-md-4 font-lg d-md-none text-green">Full Stack Engineer</a>
+							<p class=" col-md-4 font-xs-l">Bangalore, Jakarta, Singapore</p>
+							<a href="/job-description/" class="col-md-4 text-success text-right d-none d-md-block"> Apply</a>
+					</div>
+				</div>
+
+				<h5 class="py-5 text-black font-xs-l">Your profile doesn't fit a box? Don't worry,
+					<a href="#">
+						<span class="text-green font-xs-l">upload your resume here.</span>
+					</a>
+				</h5>
+
+			</div>
+			<!-- end of Open positions -->
+
+			<!-- Articles Section -->
+			<div class="container pb-5 d-none d-md-block">
+				<div class="row neosans-bold">
+					<div class="col-md-8 bg-green d-flex align-items-stretch">
+						<div class="row py-3">
+							<div class="col-md-5">
+								<h5 class="p-5 text-white font-xl-l">Who is a Full Stack Engineer?</h5>
+							</div>
+							<div class="col-md-6">
+								<img src="../img/vector-smart-object-3.png" alt="Full stack engineer" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex align-items-center" style="background-color: #2a2b2b;">
+						<h5 class="text-white font-xl-l p-5">The
+							<br>GOJEK
+							<br> Hiring
+							<br> Process</h5>
+					</div>
+				</div>
+
+				<div class="row align-items-center py-3" style="background-color: #99d3d8">
+					<div class="col-md-6">
+						<h1 class="h2 p-5 card-titlefont-xl-l text-white col-md-8">FAQs: How we go about recruiting a developer</h1>
+					</div>
+					<div class="col-md-6">
+						<img style="max-width: 400px;" class="col-md-12 img-fluid" src="../img/recruiting-devs.png" alt="How we go about recruiting a developer?">
+					</div>
+				</div>
+			</div>
+			<!-- end of Articles section -->
+	</section>
+	<!--End of Employee Stories section -->
+
+	<!-- Footer section -->
+	<footer class="bg-black text-white py-5">
+		<div class="container">
+			<div class="row text-uppercase">
+				<div class="col-md-4">
+					<a href="/">
+						<img src="../img/logo-footer.png" alt="Go-JEK_LOGO" title="GO-JEK">
+					</a>
+				</div>
+				<div class="col-md-8">
+					<div class="row font-xs">
+						<div class="col-md-3 d-none d-md-block">
+							<ul class="list-unstyled">
+								<li>
+									<a href="/">Home</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 d-none d-md-block">
+							<ul class="list-unstyled">
+
+								<li class="pb-4">
+									<a href="/about-us/">About</a>
+								</li>
+								<li class="pb-4">
+									<a href="#">Careers</a>
+								</li>
+								<li class="pb-4">
+									<a href="/open-source/">Open Source</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 d-none d-md-block">
+							<ul class="list-unstyled">
+								<li class="pb-4">
+									<a href="/blog/">Blog</a>
+								</li>
+								<li class="pb-4">
+									<a href="/">News</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 d-none d-md-block">
+							<ul class="list-unstyled">
+								<li class="pb-4 text-center mr-2">
+									<a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-lg-5 px-md-4" href="/careers/">Apply</a>
+								</li>
+								<li class="pb-4">
+									<a class="text-opacity font-xs" href="/">Open Positions</a>
+								</li>
+								<li class="pb-4">
+									<a class="text-opacity font-xs" href="/">FAQs</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<span class="copyright-text">Connect with us on</span>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="https://www.facebook.com/gojekindonesia" target="_blank">
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://twitter.com/gojekindonesia" target="_blank">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://in.linkedin.com/company/go-jek-india" target="_blank">
+								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.instagram.com/gojekindonesia/" target="_blank">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.youtube.com/channel/UCmlKSK0OKn_B3oPwElW4n5w" target="_blank">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<span class="invisible">Copyright text</span>
+					<p class="text-uppercase align-middle copyright-text">
+						<strong>&copy; 2018 All rights reserved</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	  crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+	  crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+	  crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script type="text/javascript" src="../js/smooth-scroll.js"></script>
+
+	<script>
+		// Smooth scroll initialization
+		var scroll = new SmoothScroll('a[href*="#"]');
 
 
+		$(".go-jek-slider").slick({
+			dots: false,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [{
+					breakpoint: 768,
+					settings: {
+						arrows: true,
+						centerMode: false,
+						dots: true,
+						slidesToShow: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						dots: true,
+						arrows: true,
+						centerMode: false,
 
-                    <footer class="bg-black text-white py-5">
-                        <div class="container">
-                            <div class="row text-uppercase">
-                                <div class="col-lg-4">
-                                    <img src="../img/logo-footer.png" alt="Go-JEK Logo">
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="row">
-                                        <div class="col-lg-3 d-none d-md-block">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a href="/">Home</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-3 d-none d-md-block">
-                                            <ul class="list-unstyled">
-                                                <li class="pb-4">
-                                                    <a href="/">Company</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a class="font-xs" href="/">About</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a class="font-xs" href="/">Careers</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-3 d-none d-md-block">
-                                            <ul class="list-unstyled">
-                                                <li class="pb-4">
-                                                    <a href="/">Blog</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a href="/">Events</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a href="/">News</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-3 d-none d-md-block">
-                                            <ul class="list-unstyled">
-                                                <li class="pb-4">
-                                                    <a class="green-apply-btn btn btn-success neosans-bold rounded-0 text-white" href="/">Apply</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a class="text-opacity font-xs" href="/">Open Positions</a>
-                                                </li>
-                                                <li class="pb-4">
-                                                    <a class="text-opacity font-xs" href="/">FAQs</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+						slidesToShow: 1
+					}
+				}
+			]
+		});
 
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <span class="text-opacity copyright-text">Connect with us on</span>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-8">
-                                    <span class="invisible">Copyright text</span>
-                                    <p class="text-uppercase text-opacity align-middle copyright-text"><strong>terms &amp; conditions | privacy policy | &copy; 2018 All rights reserved</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-
-                    <!-- JS files -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-                    crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-                    crossorigin="anonymous"></script>
-
-                    <script type="text/javascript" src="../js/slick.min.js"></script>
-
-                    <script>
-                        $(".go-jek-slider").slick({
-                            dots: false,
-                            infinite: true,
-                            centerMode: true,
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: true,
-                                    infinite: true,
-                                    centerMode: true,
-                // centerPadding: '40px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: true,
-                infinite: true,
-                centerMode: true,
-                // centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }]
-    });
-</script>
+		$(".stories-slider").slick({
+			arrows: true,
+			centerMode: false,
+			centerPadding: '40px',
+			dots: false,
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			responsive: [{
+					breakpoint: 769,
+					settings: {
+						dots: false,
+						centerMode: true,
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 577,
+					settings: {
+						dots: true,
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+	</script>
 
 </body>
 

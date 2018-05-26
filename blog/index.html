@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <!-- Bootstrap assets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/slick.css" />
     <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
 
-    <title>GO-JEK Open Source</title>
+    <title>GO-JEK Blog</title>
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light neosans-bold text-uppercase px-4 py-2">
         <a class="navbar-brand" href="/">
-            <img class="header-logo-width" src="../img/gojek-logo.png" alt="GO-JEK_logo" title="GO-JEK">
+            <img class="header-logo-width" src="../img/gojek-logo.png" alt="gojek-logo" title="GO-JEK">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="mx-3 nav-item">
@@ -42,33 +48,79 @@
                 <li class="mx-3 nav-item">
                     <a class="nav-link" href="/about-us/">About</a>
                 </li>
+                <li class="mx-3 nav-item">
+                    <a class="nav-link" href="/open-source/">Open Source</a>
+                </li>
                 <li class="mx-3 nav-item active">
-                    <a class="nav-link" href="javascript:void(0);">Open Source
+                    <a class="nav-link" href="javascript:void(0);">Blog
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="mx-3 nav-item ">
-                    <a class="nav-link" href="/blog/">Blog</a>
-                </li>
                 <li class="mx-3 nav-item">
-                    <a class="btn btn-success rounded-1 neosans-bold green-apply-btn" href="/careers/">Apply</a>
+                    <a class="btn btn-success rounded-1 neosans-bold green-apply-btn " href="/careers/">Apply</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- End navigation -->
-    <!-- Github Repos -->
-    <!-- Opensource section -->
-    <section class="mt-5 bg-green first-section">
-        <div class="container  pt-5">
-            <h1 class="text-center text-white pl-0 neosans-bold font-xl-x">Open Source Projects</h1>
-            <p class="text-center text-white font-neosans font-xs-l p-4 px-5">We don’t have “office timings”. We’re not a 9-5 “job”. Leaders go only by reputation, not titles. Leaders code. Everyone codes. We believe leaders who code are better judges of technical skill in people. Leaders are 24 years old or 50. Our average age is 29. Age doesn’t define leadership.</p>
-            <div id="opensourceCards" class="row justify-content-md-center py-5"></div>
-            <!-- Tech Stack -->
+
+    <!-- Blog  cards -->
+    <section class="py-3 first-section">
+        <div class="container">
+            <div class="row medium-blog">
+            </div>
         </div>
     </section>
-    <!-- end of opensource section -->
-    <!-- End Github Repos-->
+    <!-- end of blog cards -->
+
+    <!-- Call to action -->
+    <!-- <section>
+            <div class="container pl-0 pr-0">
+                <div class="jumbotron jumbotron-fluid gray-bg">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3 class="h3 text-center font-xl text-green neosans-bold">Want to make the world a better place
+                                <span>?</span> We’ve got the Source Code!</h3>
+
+                            <div class="text-center pt-3">
+                                <button type="button" class="rounded-0 text-cener btn btn-success neosans-bold text-uppercase green-apply-btn">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <!-- end of Call to action -->
+
+    <!-- Blog section -->
+    <section class="py-3">
+        <div class="container">
+            <!-- <h1 class="h2 pl-0">Blogs</h1> -->
+            <div id="jsonContent" class="row blog-slider">
+            </div>
+        </div>
+    </section>
+    <!-- end of blog section -->
+
+    <!-- Heading - Want  to make -->
+    <section class="bg-green">
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <!-- <div class="row justify-content-center"> -->
+                <div class="col-lg-8">
+                    <h3 class="h3 text-center font-xl text-white neosans-bold">Want to make the world a better place
+                        <span>?</span> We’ve got the Source Code!</h3>
+
+                    <div class="text-center pt-3">
+                        <a href="/careers/" class=" text-center btn bg-white text-green neosans-bold text-uppercase my-1 font-md challenging-button custom-btn">APPLY NOW </a>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- End heading  -->
+
     <footer class="bg-black text-white py-5">
         <div class="container">
             <div class="row text-uppercase">
@@ -90,20 +142,20 @@
                             <ul class="list-unstyled">
 
                                 <li class="pb-4">
-                                    <a  href="/about-us/">About</a>
+                                    <a href="/about-us/">About</a>
                                 </li>
                                 <li class="pb-4">
-                                    <a  href="/careers/">Careers</a>
+                                    <a href="/careers/">Careers</a>
                                 </li>
                                 <li class="pb-4">
-                                    <a  href="/open-source/">Open Source</a>
+                                    <a href="/open-source/">Open Source</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-3 d-none d-md-block">
                             <ul class="list-unstyled">
                                 <li class="pb-4">
-                                    <a href="/blog/">Blog</a>
+                                    <a href="#">Blog</a>
                                 </li>
                                 <li class="pb-4">
                                     <a href="/">News</a>
@@ -161,32 +213,32 @@
                 <div class="col-md-8">
                     <span class="invisible">Copyright text</span>
                     <p class="text-uppercase align-middle copyright-text">
-                        <strong>terms &amp; conditions | privacy policy | &copy; 2018 All rights reserved</strong>
+                        <strong>&copy; 2018 All rights reserved</strong>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- JS files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="../js/slick.min.js"></script>
-    <script type="text/javascript" src="../js/github.js"></script>
-    <script type="text/javascript" src="../js/media.js"></script>
-    <script src="../js/githubrepos.js"></script>
+    <script src="../js/media.js"></script>
     <script>
         $(document).ready(function () {
-            // Call githubrepo API to get open source cards
-            getGithubRepo(10, false);
+            getMediumBlogs(9, false);
         });
     </script>
+
 </body>
 
 </html>
