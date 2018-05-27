@@ -130,7 +130,7 @@ body {
     padding-bottom: 7px;
 }
 
-.green-apply-btn{
+.green-apply-btn {
     padding-top: 7.25px;
     padding-bottom: 5.25px;
 }
@@ -226,7 +226,6 @@ button.navbar-toggler {
 }
 
 .carousel-btn .btn {
-    
     letter-spacing: 1.5px;
     font-size: 1rem;
 }
@@ -404,31 +403,26 @@ button.navbar-toggler {
     color: #009944;
 }
 
-/* Media Queries */
 
-@media only screen and (max-width: 800px) {
-    .emp-testimonial {
-        font-size: 0.6rem;
-    }
-    #go-jek-slider .carousel-item .carousel-caption {
-        top: 9%;
-        right: 30%;
-    }
-    #go-jek-slider .homepage-carousel-indicators {
-        top: 55%;
-    }
-    #carouselExampleIndicators .careers-carousel-indicators {
-        top: 50%;
-        right: 21%;
-    }
-    #go-jek-slider .carousel-btn {
-        top: 61%;
-        font-family: "NeoSansBold";
-        z-index: 99;
-    }
+
+/* Responsive text */
+
+html {
+    font-size: 1rem;
 }
 
-@media only screen and (max-width: 577px) {
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575px) {
+    html {
+        font-size: 12px;
+    }
+    .first-section {
+        margin-top: 48px;
+    }
+    .about-us-container-height {
+        height: 1500px;
+    }
     .opensource-card img,
     .tech-stack img {
         max-width: 100px;
@@ -459,26 +453,6 @@ button.navbar-toggler {
     }
 }
 
-/* Responsive text */
-
-html {
-    font-size: 1rem;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-
-@media (max-width: 575px) {
-    html {
-        font-size: 12px;
-    }
-    .first-section {
-        margin-top: 48px;
-    }
-    .about-us-container-height {
-        height: 1500px;
-    }
-}
-
 /*  Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -506,12 +480,31 @@ html {
     .about-us-container-height {
         height: 1300px;
     }
+    .emp-testimonial {
+        font-size: 0.6rem;
+    }
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 9%;
+        right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 55%;
+    }
+    #carouselExampleIndicators .careers-carousel-indicators {
+        top: 90%;
+        right: 21%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 61%;
+        font-family: "NeoSansBold";
+        z-index: 99;
+    }
 }
 
 @media (min-width: 1024px) {
     #carouselExampleIndicators .careers-carousel-indicators {
-        top: 45%;
-        right: 23%;
+        top: 95%;
+        right: 16.5rem;
     }
     .second-path {
         position: absolute;
@@ -540,8 +533,8 @@ html {
 
 @media (min-width: 1200px) {
     #carouselExampleIndicators .careers-carousel-indicators {
-        top: 60%;
-        right: 25%;
+        top: 95%;
+        right: 22rem;
     }
     html {
         font-size: 16px;
@@ -595,7 +588,23 @@ li {
     stroke-width: 14px;
 }
 
-.transition-effect {
+/* .transition-effect {
+    display: none;
+} */
+
+.transition-effect1 {
+    display: none;
+}
+
+.transition-effect2 {
+    display: none;
+}
+
+.transition-effect3 {
+    display: none;
+}
+
+.transition-effect4 {
     display: none;
 }
 

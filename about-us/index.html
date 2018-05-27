@@ -80,15 +80,15 @@
 
                     <div class="col-md-12 col-lg-9  text-white">
                         <div class="d-flex flex-row flex-wrap text-md-left text-center align-items-center">
-                            <div class="col-md-6 col-sm-12 col-lg-6 text-center pt-4 transition-effect ">
+                            <div class="col-md-6 col-sm-12 col-lg-6 text-center pt-4 transition-effect">
                                 <img class="img-fluid" src="../img/egg.gif">
                             </div>
                             <div class="col-md-6 col-sm-12 col-lg-6 pt-2   transition-effect fade-right">
                                 <p class="neosans-bold font-lg">
-                                    The GO-JEK App was launched in the beginning of 2015.
+                                    A Revolution was Born.
                                 </p>
                                 <br>
-                                <p class="font-neosans font-xs-l">Orders scale from 3,000 to 100,000 a day in few months</p>
+                                <p class="font-neosans font-xs-l">The GO-JEK App was launched in the beginning of 2015.</p>
                             </div>
                         </div>
                     </div>
@@ -110,12 +110,12 @@
 
 
             <div class="d-flex flex-row flex-wrap justify-content-start align-items-center pt-5 ">
-                <div class="col-md-5 offset-md-1 col-sm-12 transition-effect">
+                <div class="col-md-5 offset-md-1 col-sm-12 transition-effect1">
                     <img class="img-fluid" src="../img/scooter-dudes-noloop.gif" alt="1 million drivers">
                 </div>
-                <div class="col-md-4 offset-md-1 col-sm-12 text-dark pt-4 transition-effect fade-right">
+                <div class="col-md-4 offset-md-1 col-sm-12 text-dark pt-4 transition-effect1 fade-right1">
                     <p class="font-lg neosans-bold">
-                        Orders scale from 3000 to 100,000 a day in few months
+                        Growing Faster & Stronger. Day on Day.
                     </p>
                     <p class="font-xs-l font-neosans">
                         Orders scale from 3,000 to 100,000 a day in few months
@@ -151,18 +151,19 @@
                 </div>
 
 
+                <div class="col-md-5 col-sm-12 order-sm-2 transition-effect2 pb-3">
+                    <img class="img-fluid " src="../img/robot-transparent.gif" alt="1 million drivers">
+                </div>
 
-                <div class="col-md-4 offset-md-2 col-sm-12 order-sm-1  text-dark  my-5  transition-effect">
-                    <p class="font-lg neosans-bold transition-effect-text fade-right ">
-                        By end of 2015 - systems were crashing because of volumes </p>
-                    <p class="font-xs-l font-neosans transition-effect-text fade-right">
-                        Orders scale from 3,000 to 100,000 a day in few months
+                <div class="col-md-4 offset-md-2 col-sm-12 order-sm-1 text-dark  my-5  transition-effect2">
+                    <p class="font-lg neosans-bold fade-right ">
+                        Breaking Barriers. Quite Literally.</p>
+                    <p class="font-xs-l font-neosans fade-right">
+                        By end of 2015 - systems were crashing because of volumes
                     </p>
                 </div>
 
-                <div class="col-md-5 col-sm-12 order-sm-2 transition-effect pb-3">
-                    <img class="img-fluid " src="../img/robot-transparent.gif" alt="1 million drivers">
-                </div>
+
 
 
             </div>
@@ -178,21 +179,17 @@
                 </svg>
             </div>
 
-
-
-
-            <div class="mt-5 transition-effect">
+            <div class="mt-5 transition-effect3">
                 <div class="embed-responsive embed-responsive-21by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L5FIAniosZU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
                 </div>
-                <p class="neosans-bold text-dark font-lg">Niranjan rewrote a key piece of tech in Golang in under 3 days</p>
-                <p class="font-neosans text-dark font-xs-l">Orders scale from 3,000 to 100,000
-                    <br/> a day in few months</p>
+                <p class="neosans-bold text-dark font-lg">Achieving the Impossible.</p>
+                <p class="font-neosans text-dark font-xs-l">Niranjan rewrote a key piece of tech in Golang in under 3 days</p>
             </div>
             <div class="py-4">
 
             </div>
-            <div class="pb-5 transition-effect">
+            <div class="pb-5 transition-effect4">
                 <p class="h1 text-dark text-center font-lg m-0">
                     In the last 36 months
                 </p>
@@ -284,7 +281,7 @@
                                     <a class="green-apply-btn btn btn-success neosans-bold rounded-1 text-white px-lg-5 px-md-4" href="/careers/">Apply</a>
                                 </li>
                                 <li class="pb-4">
-                                    <a class="text-opacity font-xs" href="/">Open Positions</a>
+                                    <a class="text-opacity font-xs" href="/careers/index.html#viewPosition">Open Positions</a>
                                 </li>
                                 <li class="pb-4">
                                     <a class="text-opacity font-xs" href="/">FAQs</a>
@@ -353,14 +350,13 @@
     <script src="../js/githubrepos.js"></script>
     <script>
         $(document).ready(function () {
+            $(this).scrollTop(0);
             run();
+
             $(function () {
                 $(".transition-effect").each(function (i, e) {
-                    $(this).delay(i * 2000).fadeIn(100);
-                    if (i == 4) {
-                        $(".transition-effect-text").delay(i * 3000).fadeIn(100);
-                    }
-                    setTimeout(countNumbers, 15000);
+                    $(this).delay(i * 1500).fadeIn(100);
+
                 });
                 $(".fade-right").each(function (i, e) {
                     console.log(i)
@@ -371,21 +367,41 @@
 
                 });
             });
+
+
+
+            // $(function () {
+            //     $(".transition-effect1").each(function (i, e) {
+            //         $(this).delay(i * 1500).fadeIn(100);
+            //         if (i == 4) {
+            //             $(".transition-effect-text").delay(i * 2000).fadeIn(100);
+            //         }
+            //         setTimeout(countNumbers, 12000);
+            //     });
+            //     $(".fade-right").each(function (i, e) {
+            //         console.log(i)
+            //         $(this).animate({
+            //             left: 10,
+            //             opacity: "show"
+            //         }, 500);
+
+            //     });
+            // });
         });
 
-        function countNumbers() {
-            $('.count').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: 6666,
-                }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now) + 'x');
-                    },
-                });
-            });
-        }
+        // function countNumbers() {
+        //     $('.count').each(function () {
+        //         $(this).prop('Counter', 0).animate({
+        //             Counter: 6666,
+        //         }, {
+        //             duration: 900,
+        //             easing: 'swing',
+        //             step: function (now) {
+        //                 $(this).text(Math.ceil(now) + 'x');
+        //             },
+        //         });
+        //     });
+        // }
     </script>
 
 </body>
