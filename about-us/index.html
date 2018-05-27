@@ -20,11 +20,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
-    <link rel="stylesheet" href="../css/custom.css">
-
-    <title>GO-JEK</title>
+    <title>About GO-JEK</title>
 </head>
 
 <body>
@@ -71,7 +67,7 @@
             <div class="container ">
                 <div class="d-flex flex-row flex-wrap  justify-content-center align-items-center">
 
-                    <div class="col-md-12 col-lg-3 text-center pt-5 w3-animate-left w3-animate-opacity ">
+                    <div class="col-md-12 col-lg-3 text-center pt-5 w3-animate-left w3-animate-opacity">
                         <p class="neosans-bold text-white font-xxl-x text-lg-left text-center">
                             The
                             <br> GO-JEK Journey
@@ -83,7 +79,7 @@
                             <div class="col-md-6 col-sm-12 col-lg-6 text-center pt-4 transition-effect">
                                 <img class="img-fluid" src="../img/egg.gif">
                             </div>
-                            <div class="col-md-6 col-sm-12 col-lg-6 pt-2   transition-effect fade-right">
+                            <div class="col-md-6 col-sm-12 col-lg-6 pt-2 transition-effect fade-right">
                                 <p class="neosans-bold font-lg">
                                     A Revolution was Born.
                                 </p>
@@ -118,16 +114,16 @@
                         Growing Faster & Stronger. Day on Day.
                     </p>
                     <p class="font-xs-l font-neosans">
-                        Orders scale from 3,000 to 100,000 a day in few months
+                        By end of 2015 - systems were crashing because of volumes
                     </p>
                 </div>
 
             </div>
 
+
+
             <div class="d-none d-md-block">
                 <svg class="fourth-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 149">
-
-
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_1-2" data-name="Layer 1">
                             <line x1="7" x2="7" y2="149" />
@@ -138,10 +134,8 @@
 
 
             <div class="d-flex flex-row flex-wrap align-items-center">
-
                 <div class="d-none d-md-block">
                     <svg class="third-path about-us-path-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
-
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
                                 <path d="M233,0C233,128.68,128.68,233,0,233" />
@@ -222,7 +216,7 @@
                     <h3 class="h3 text-center font-xl text-white neosans-bold">Want to make the world a better place
                         <span>?</span> We’ve got the Source Code!</h3>
                     <div class="text-center pt-3">
-                        <a href="/careers/" class=" text-center btn bg-white text-green neosans-bold text-uppercase my-1 font-md challenging-button banner-apply-btn">APPLY NOW </a>
+                        <a href="/careers/" class="text-center btn bg-white text-green neosans-bold text-uppercase my-1 font-md challenging-button custom-btn">APPLY NOW </a>
                     </div>
                 </div>
             </div>
@@ -266,9 +260,6 @@
                             <ul class="list-unstyled">
                                 <li class="pb-4">
                                     <a href="/blog/">Blog</a>
-                                </li>
-                                <li class="pb-4">
-                                    <a href="/">Events</a>
                                 </li>
                                 <li class="pb-4">
                                     <a href="/">News</a>
@@ -326,7 +317,7 @@
                 <div class="col-md-8">
                     <span class="invisible">Copyright text</span>
                     <p class="text-uppercase align-middle copyright-text">
-                        <strong>terms &amp; conditions | privacy policy | &copy; 2018 All rights reserved</strong>
+                        <strong>&copy; 2018 All rights reserved</strong>
                     </p>
                 </div>
             </div>
@@ -344,19 +335,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="../js/slick.min.js"></script>
     <script src="../js/about-us.js"></script>
-    <script src="../js/media.js"></script>
-    <script src="../js/githubrepos.js"></script>
     <script>
         $(document).ready(function () {
-            $(this).scrollTop(0);
+            $(window).on('beforeunload', function () {
+                $(window).scrollTop(0);
+            });
             run();
 
             $(function () {
                 $(".transition-effect").each(function (i, e) {
                     $(this).delay(i * 1500).fadeIn(100);
-
                 });
                 $(".fade-right").each(function (i, e) {
                     console.log(i)
@@ -367,41 +356,8 @@
 
                 });
             });
-
-
-
-            // $(function () {
-            //     $(".transition-effect1").each(function (i, e) {
-            //         $(this).delay(i * 1500).fadeIn(100);
-            //         if (i == 4) {
-            //             $(".transition-effect-text").delay(i * 2000).fadeIn(100);
-            //         }
-            //         setTimeout(countNumbers, 12000);
-            //     });
-            //     $(".fade-right").each(function (i, e) {
-            //         console.log(i)
-            //         $(this).animate({
-            //             left: 10,
-            //             opacity: "show"
-            //         }, 500);
-
-            //     });
-            // });
         });
 
-        // function countNumbers() {
-        //     $('.count').each(function () {
-        //         $(this).prop('Counter', 0).animate({
-        //             Counter: 6666,
-        //         }, {
-        //             duration: 900,
-        //             easing: 'swing',
-        //             step: function (now) {
-        //                 $(this).text(Math.ceil(now) + 'x');
-        //             },
-        //         });
-        //     });
-        // }
     </script>
 
 </body>

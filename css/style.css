@@ -34,7 +34,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: #a5a5a5;
+    color: #686868;
     letter-spacing: normal;
 }
 
@@ -46,17 +46,17 @@ body {
     font-family: "NeoSansBold", sans-serif;
 }
 
-.font-xs-s {
+/* .font-xs-s {
     font-size: 0.87rem;
-}
+} */
 
 .font-xs {
     font-size: 0.94rem;
 }
 
-.font-xs-l {
+/* .font-xs-l {
     font-size: 1rem;
-}
+} */
 
 .font-sm {
     font-size: 1.125rem;
@@ -123,11 +123,11 @@ body {
     max-width: 132px;
 }
 
-.banner-apply-btn {
+.custom-btn {
     border-radius: 0.5rem;
+    font-size: 1.31rem;
+    padding: 9px 0 7px;
     width: 16rem;
-    padding-top: 9px;
-    padding-bottom: 7px;
 }
 
 .green-apply-btn {
@@ -272,9 +272,9 @@ button.navbar-toggler {
     background-color: #f2f2f2;
 }
 
-.text-gray {
+/* .text-gray {
     color: #686868;
-}
+} */
 
 .numbers-card .card-img-top {
     height: 200px;
@@ -294,11 +294,11 @@ button.navbar-toggler {
 }
 
 .careers-banner {
-    background-image: url(../img/careers-banner-1.png);
+    background-image: url(../img/CareersBanner.jpg);
 }
 
 .go-jek-work {
-    background-image: url(../img/go-jek-work.png);
+    background-image: url(../img/CareersBannerPeople.jpg);
 }
 
 .text-black {
