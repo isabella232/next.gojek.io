@@ -231,7 +231,8 @@ button.navbar-toggler {
 }
 
 .strikediag {
-    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 55.5%, transparent 52.25%);
+    color: orange;
 }
 
 /* .strike-text{
@@ -481,10 +482,10 @@ html {
         height: 1300px;
     }
     .emp-testimonial {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     #go-jek-slider .carousel-item .carousel-caption {
-        top: 9%;
+        top: 14%;
         right: 30%;
     }
     #go-jek-slider .homepage-carousel-indicators {
@@ -492,7 +493,7 @@ html {
     }
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 90%;
-        right: 21%;
+        right: 20%;
     }
     #go-jek-slider .carousel-btn {
         top: 61%;
@@ -504,7 +505,7 @@ html {
 @media (min-width: 1024px) {
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 95%;
-        right: 16.5rem;
+        right: 15rem;
     }
     .second-path {
         position: absolute;
@@ -527,6 +528,11 @@ html {
     .about-us-container-height {
         height: 1650px;
     }
+
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 27%;
+        right: 30%;
+    }
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
@@ -534,7 +540,7 @@ html {
 @media (min-width: 1200px) {
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 95%;
-        right: 22rem;
+        right: 20rem;
     }
     html {
         font-size: 16px;

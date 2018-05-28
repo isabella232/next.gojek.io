@@ -9,8 +9,8 @@ function run() {
         if (y_scroll_pos > scroll_pos_test1) {
             //    $("body").css("background-color","#000");
             $('.first-path').css("stroke-dashoffset", "0");
-            $('.first-path').css("transition", "2s");
-            // $('.first-path').css("transition-delay", "4s");
+            $('.first-path').css("transition", "1.5s");
+            $('.first-path').css("transition-delay", "0.4s");
 
 
             $(function () {
@@ -29,10 +29,8 @@ function run() {
         }
 
         if (y_scroll_pos > scroll_pos_test2) {
-            //    $("body").css("background-color","#000");
             $('.second-path').css("stroke-dashoffset", "0");
             $('.second-path').css("transition", "1s");
-            // $('.second-path').css("transition-delay", "6s");
 
             $('.third-path').css("stroke-dashoffset", "0");
             $('.third-path').css("transition", "1s");
@@ -58,15 +56,6 @@ function run() {
         }
 
         if (y_scroll_pos > scroll_pos_test3) {
-            $('.third-path').css("stroke-dashoffset", "0");
-            $('.third-path').css("transition", "1s");
-            // $('.third-path').css("transition-delay", "9s");
-
-            $('.fourth-path').css("stroke-dashoffset", "0");
-            $('.fourth-path').css("transition", "1s");
-            // $('.fourth-path').css("transition-delay", "9s");
-
-
             $(function () {
                 $(".transition-effect3").each(function (i, e) {
                     $(this).delay(i * 1500).fadeIn(100);
@@ -78,7 +67,7 @@ function run() {
 
             $('.fifth-path').css("stroke-dashoffset", "0");
             $('.fifth-path').css("transition", "1s");
-            $('.fifth-path').css("transition-delay", "0.5s");
+            $('.fifth-path').css("transition-delay", "1s");
 
             $(function () {
                 $(".transition-effect4").each(function (i, e) {
@@ -107,53 +96,4 @@ function run() {
         }
 
     });
-
-
-
-
-
-
-    // $('.first-path').css("stroke-dashoffset", "0");
-    // $('.first-path').css("transition", "1s");
-    // $('.first-path').css("transition-delay", "3.3s");
-
-
-    // $('.second-path').css("stroke-dashoffset", "0");
-    // $('.second-path').css("transition", "1s");
-    // $('.second-path').css("transition-delay", "6s");
-
-
-    // $('.third-path').css("stroke-dashoffset", "0");
-    // $('.third-path').css("transition", "1s");
-    // $('.third-path').css("transition-delay", "9s");
-
-
-    // $('.fourth-path').css("stroke-dashoffset", "0");
-    // $('.fourth-path').css("transition", "1s");
-    // $('.fourth-path').css("transition-delay", "9s");
-
-
-    // $('.fifth-path').css("stroke-dashoffset", "0");
-    // $('.fifth-path').css("transition", "1s");
-    // $('.fifth-path').css("transition-delay", "12s");
-
 };
-
-
-
-// function resetAboutUs() {
-//     $('.first-path').css("stroke-dashoffset", "700");
-//     $('.first-path').css("transition", "0.1s");
-
-//     $('.second-path').css("stroke-dashoffset", "500");
-//     $('.second-path').css("transition", "0.1s");
-
-//     $('.third-path').css("stroke-dashoffset", "400");
-//     $('.third-path').css("transition", "0.1s");
-
-//     $('.fourth-path').css("stroke-dashoffset", "200");
-//     $('.fourth-path').css("transition", "0.1s");
-
-//     $('.fifth-path').css("stroke-dashoffset", "200");
-//     $('.fifth-path').css("transition", "0.1s");
-// }
