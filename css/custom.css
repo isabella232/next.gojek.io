@@ -61,6 +61,7 @@
 .impact-slider .slick-current {
   opacity: 1;
   pointer-events: visible;
+  cursor: pointer;
 
 }
 

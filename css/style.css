@@ -310,6 +310,11 @@ button.navbar-toggler {
     font-size: 3rem;
 }
 
+.link-decoration:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .strike-text {
     color: red;
 }
@@ -388,6 +393,8 @@ button.navbar-toggler {
 
 /* blog style start */
 
+
+
 .medium-blog em,
 .card-body,
 .banner-link:hover {
@@ -433,6 +440,9 @@ html {
         bottom: 0;
         left: 16%;
     }
+    .blog-card-img{
+        min-height: 170px;
+        }
     .absolute-caption {
         position: absolute;
         bottom: 35%;
@@ -481,6 +491,9 @@ html {
     .about-us-container-height {
         height: 1300px;
     }
+    .blog-card-img{
+        min-height: 150px;
+        }
     .emp-testimonial {
         font-size: 0.8rem;
     }
@@ -529,9 +542,29 @@ html {
         height: 1650px;
     }
 
+    .blog-card-img{
+        min-height: 220px;
+        }
+
     #go-jek-slider .carousel-item .carousel-caption {
-        top: 27%;
+        top: 34%;
         right: 30%;
+    }
+
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 60%;
+        right: 10%;
+    }
+
+    #go-jek-slider .carousel-btn {
+        top: 66%;
+        left: 11%;
+        font-family: "NeoSansBold";
+        z-index: 99;
+    }
+
+    .emp-testimonial {
+        font-size: 1rem;
     }
 }
 
@@ -566,6 +599,9 @@ html {
     .about-us-container-height {
         height: 1950px;
     }
+    .blog-card-img{
+        min-height: 220px;
+        }
 }
 
 li {
