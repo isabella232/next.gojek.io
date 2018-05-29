@@ -257,6 +257,10 @@ button.navbar-toggler {
 
 /*Go-Jek facts*/
 
+.custom-line-height {
+    line-height: 24px;
+}
+
 .dark-green-bg {
     background-color: #02853c;
 }
