@@ -566,6 +566,10 @@ html {
     .emp-testimonial {
         font-size: 1rem;
     }
+
+    .careers-modal{
+        max-width: 1000px;
+    }
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
@@ -601,6 +605,10 @@ html {
     }
     .blog-card-img{
         min-height: 220px;
+        }
+
+        .careers-modal{
+            max-width: 1000px;
         }
 }
 
