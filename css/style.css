@@ -518,27 +518,37 @@ html {
         font-size: 0.8rem;
     }
     #go-jek-slider .carousel-item .carousel-caption {
-        top: 14%;
+        top: 31%;
         right: 30%;
+        
     }
     #go-jek-slider .homepage-carousel-indicators {
-        top: 55%;
+        top: 71%;
     }
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 90%;
         right: 20%;
     }
     #go-jek-slider .carousel-btn {
-        top: 61%;
+        top: 76%;
         font-family: "NeoSansBold";
         z-index: 99;
     }
 }
 
 @media (min-width: 1024px) {
-    #carouselExampleIndicators .careers-carousel-indicators {
-        top: 95%;
-        right: 15rem;
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 40%;
+        right: 30%;  
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 67%;
+    }
+    
+    #go-jek-slider .carousel-btn {
+        top: 75%;
+        font-family: "NeoSansBold";
+        z-index: 99;
     }
     .second-path {
         position: absolute;
@@ -564,20 +574,7 @@ html {
     .blog-card-img {
         min-height: 220px;
     }
-    #go-jek-slider .carousel-item .carousel-caption {
-        top: 34%;
-        right: 30%;
-    }
-    #go-jek-slider .homepage-carousel-indicators {
-        top: 60%;
-        right: 10%;
-    }
-    #go-jek-slider .carousel-btn {
-        top: 66%;
-        left: 11%;
-        font-family: "NeoSansBold";
-        z-index: 99;
-    }
+  
     .emp-testimonial {
         font-size: 1rem;
     }
