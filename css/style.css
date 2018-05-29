@@ -238,7 +238,8 @@ button.navbar-toggler {
 
 .strikediag {
     position: relative;
-   }
+}
+
 .strikediag:before {
     position: absolute;
     content: "";
@@ -246,14 +247,19 @@ button.navbar-toggler {
     top: 50%;
     right: 0;
     border-top: 3px solid orange;
-    -webkit-transform:rotate(-20deg);
-    -moz-transform:rotate(-20deg);
-    -ms-transform:rotate(-20deg);
-    -o-transform:rotate(-20deg);
-    transform:rotate(-20deg);
-   }
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
 
 /*Go-Jek facts*/
+
+.custom-line-height {
+    line-height: 24px;
+}
 
 .dark-green-bg {
     background-color: #02853c;
@@ -520,7 +526,6 @@ html {
     #go-jek-slider .carousel-item .carousel-caption {
         top: 31%;
         right: 30%;
-        
     }
     #go-jek-slider .homepage-carousel-indicators {
         top: 71%;
@@ -539,12 +544,11 @@ html {
 @media (min-width: 1024px) {
     #go-jek-slider .carousel-item .carousel-caption {
         top: 40%;
-        right: 30%;  
+        right: 30%;
     }
     #go-jek-slider .homepage-carousel-indicators {
         top: 67%;
     }
-    
     #go-jek-slider .carousel-btn {
         top: 75%;
         font-family: "NeoSansBold";
@@ -572,14 +576,12 @@ html {
         height: 1650px;
     }
     .blog-card-img {
-        min-height: 220px;
+        min-height: 180px;
     }
-  
     .emp-testimonial {
         font-size: 1rem;
     }
-
-    .careers-modal{
+    .careers-modal {
         max-width: 1000px;
     }
 }
@@ -591,6 +593,18 @@ html {
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 95%;
         right: 20rem;
+    }
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 42%;
+        right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 65%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 72%;
+        font-family: "NeoSansBold";
+        z-index: 99;
     }
     html {
         font-size: 16px;
@@ -618,11 +632,23 @@ html {
     }
     .blog-card-img {
         min-height: 220px;
-        }
+    }
+    .careers-modal {
+        max-width: 1000px;
+    }
+    .modal-lg {
+        max-width: 1200px;
+    }
+}
 
-        .careers-modal{
-            max-width: 1000px;
-        }
+@media (min-width: 1920px) {
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 42%;
+        right: 30%;
+    }
+    .modal-lg {
+        max-width: 2000px;
+    }
 }
 
 li {
@@ -657,7 +683,7 @@ li {
     display: none;
 } */
 
-.transition-effect1 { 
+.transition-effect1 {
     display: none;
 }
 
@@ -705,3 +731,8 @@ li {
 .fade-right {
     display: none;
 }
+
+
+/* @media (min-width: 1440px) {
+   
+} */
