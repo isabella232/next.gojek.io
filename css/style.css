@@ -238,7 +238,8 @@ button.navbar-toggler {
 
 .strikediag {
     position: relative;
-   }
+}
+
 .strikediag:before {
     position: absolute;
     content: "";
@@ -246,12 +247,13 @@ button.navbar-toggler {
     top: 50%;
     right: 0;
     border-top: 3px solid orange;
-    -webkit-transform:rotate(-20deg);
-    -moz-transform:rotate(-20deg);
-    -ms-transform:rotate(-20deg);
-    -o-transform:rotate(-20deg);
-    transform:rotate(-20deg);
-   }
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
 
 /*Go-Jek facts*/
 
@@ -562,7 +564,7 @@ html {
         height: 1650px;
     }
     .blog-card-img {
-        min-height: 220px;
+        min-height: 180px;
     }
     #go-jek-slider .carousel-item .carousel-caption {
         top: 34%;
@@ -581,8 +583,7 @@ html {
     .emp-testimonial {
         font-size: 1rem;
     }
-
-    .careers-modal{
+    .careers-modal {
         max-width: 1000px;
     }
 }
@@ -594,6 +595,10 @@ html {
     #carouselExampleIndicators .careers-carousel-indicators {
         top: 95%;
         right: 20rem;
+    }
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 35%;
+        right: 30%;
     }
     html {
         font-size: 16px;
@@ -621,11 +626,17 @@ html {
     }
     .blog-card-img {
         min-height: 220px;
-        }
+    }
+    .careers-modal {
+        max-width: 1000px;
+    }
+}
 
-        .careers-modal{
-            max-width: 1000px;
-        }
+@media (min-width: 1920px) {
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 42%;
+        right: 30%;
+    }
 }
 
 li {

@@ -7,7 +7,7 @@ function getGithubRepo(count, sliderBool) {
         })
         .done(function(data) {
             var i, src;
-            count === 12 ? src = '../img/sample-img-2.png' : src = 'img/';
+            count === 12 ? src = '../img/' : src = 'img/';
 
 
             for (i = 0; i < count; i++) {
@@ -29,19 +29,24 @@ function getGithubRepo(count, sliderBool) {
                     }
 
                 } else {
-                    $("#opensourceCards").append(
-                        '<div class="col-md-5 rounded">' +
-                        '<div class="card border-0 mb-4 flex-row opensource-card">' +
-                        '<img class="align-self-center p-3 " src="' + src + '" alt="Sample repository">' +
-                        '<div class="card-body">' +
-                        '<h3 class="neosans-bold mb-0 font-sm-l opensource-card-title">' +
-                        '<a class="text-dark" title = "' + data[i].name + '" href="' + data[i].html_url + '" target="_blank">' + data[i].name + '</a>' +
-                        '</h3>' +
-                        '<p class="opensource-card-description mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
-                        ' </div>' +
-                        ' </div>' +
-                        '</div>'
-                    );
+                    if (data[i].name === "gojektech.github.io" || data[i].name === "gojektech") {
+
+                    } else {
+                        $("#opensourceCards").append(
+                            '<div class="col-md-5 rounded">' +
+                            '<div class="card border-0 mb-4 flex-row opensource-card">' +
+                            '<img class="align-self-center p-3 " src="' + src + data[i].name + '-logo.png" alt="' + data[i].name + ' logo img">' +
+                            '<div class="card-body">' +
+                            '<h3 class="neosans-bold mb-0 font-sm-l opensource-card-title">' +
+                            '<a class="text-dark" title = "' + data[i].name + '" href="' + data[i].html_url + '" target="_blank">' + data[i].name + '</a>' +
+                            '</h3>' +
+                            '<p class="opensource-card-description mb-auto">' + (data[i].description !== null ? data[i].description : "") + '</p>' +
+                            ' </div>' +
+                            ' </div>' +
+                            '</div>'
+                        );
+                    }
+
                 }
 
             }
