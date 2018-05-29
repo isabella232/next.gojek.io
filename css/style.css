@@ -630,12 +630,18 @@ html {
     .careers-modal {
         max-width: 1000px;
     }
+    .modal-lg {
+        max-width: 1200px;
+    }
 }
 
 @media (min-width: 1920px) {
     #go-jek-slider .carousel-item .carousel-caption {
         top: 42%;
         right: 30%;
+    }
+    .modal-lg {
+        max-width: 2000px;
     }
 }
 
@@ -719,3 +725,8 @@ li {
 .fade-right {
     display: none;
 }
+
+
+/* @media (min-width: 1440px) {
+   
+} */
