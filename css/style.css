@@ -487,6 +487,10 @@ html {
     #go-jek-slider .carousel-item .carousel-caption .font-xl {
         font-size: 18px;
     }
+
+    #go-jek-slider .carousel-btn {
+        top: 75%;
+    }
 }
 
 
