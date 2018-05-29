@@ -522,7 +522,6 @@ html {
     #go-jek-slider .carousel-item .carousel-caption {
         top: 31%;
         right: 30%;
-        
     }
     #go-jek-slider .homepage-carousel-indicators {
         top: 71%;
@@ -541,12 +540,11 @@ html {
 @media (min-width: 1024px) {
     #go-jek-slider .carousel-item .carousel-caption {
         top: 40%;
-        right: 30%;  
+        right: 30%;
     }
     #go-jek-slider .homepage-carousel-indicators {
         top: 67%;
     }
-    
     #go-jek-slider .carousel-btn {
         top: 75%;
         font-family: "NeoSansBold";
@@ -576,7 +574,6 @@ html {
     .blog-card-img {
         min-height: 180px;
     }
-  
     .emp-testimonial {
         font-size: 1rem;
     }
@@ -594,8 +591,16 @@ html {
         right: 20rem;
     }
     #go-jek-slider .carousel-item .carousel-caption {
-        top: 35%;
+        top: 42%;
         right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 65%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 72%;
+        font-family: "NeoSansBold";
+        z-index: 99;
     }
     html {
         font-size: 16px;
