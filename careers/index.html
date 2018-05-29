@@ -346,11 +346,12 @@
                 <div class="mt-4 card border-0 mb-1 rounded-0">
                     <div class="card-body pb-0 row">
                         <h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Full Stack Engineer</h4>
-                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green" data-toggle="modal" data-target="#full-stack-engineer">Full Stack Engineer
+                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green modal-btn" data-toggle="modal" data-modal-target="#full-stack-engineer">Full Stack Engineer
                             </button>
 
                             <p class=" col-md-4 font-xs-l text-lg-left text-center">Bangalore, Jakarta, Singapore</p>
-                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0" data-toggle="modal" data-target="#full-stack-engineer">
+                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0 modal-btn" data-toggle="modal"
+                                data-modal-target="#full-stack-engineer">
                                 Apply</button>
                     </div>
                 </div>
@@ -653,11 +654,11 @@
                 <div class=" card border-0 mb-1 rounded-0">
                     <div class="card-body pb-0 row">
                         <h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Android Engineer</h4>
-                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green" data-toggle="modal" data-target="#android-engineer">Android Engineer
+                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green modal-btn" data-toggle="modal" data-modal-target="#android-engineer">Android Engineer
                             </button>
 
                             <p class=" col-md-4 font-xs-l text-lg-left text-center">Bangalore, Jakarta, Singapore</p>
-                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0" data-toggle="modal" data-target="#android-engineer">
+                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0 modal-btn" data-toggle="modal" data-modal-target="#android-engineer">
                                 Apply</button>
                     </div>
                 </div>
@@ -858,11 +859,11 @@
                 <div class=" card border-0 mb-1 rounded-0">
                     <div class="card-body pb-0 row">
                         <h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">iOS Engineer</h4>
-                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green" data-toggle="modal" data-target="#ios-engineer">iOS Engineer
+                            <button class="h4 btn btn-link col-md-4 font-lg d-md-none text-green modal-btn" data-toggle="modal" data-modal-target="#ios-engineer">iOS Engineer
                             </button>
 
                             <p class=" col-md-4 font-xs-l text-lg-left text-center">Bangalore, Jakarta, Singapore</p>
-                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0" data-toggle="modal" data-target="#ios-engineer">
+                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0 modal-btn" data-toggle="modal" data-modal-target="#ios-engineer">
                                 Apply</button>
                     </div>
                 </div>
@@ -880,7 +881,7 @@
                             <div class="modal-body p-0">
                                 <section class="bg-green">
                                     <div class="container py-5">
-                                        <h1 class="h2 font-xl  text-center text-white">IOS Engineer</h1>
+                                        <h1 class="h2 font-xl  text-center text-white">iOS Engineer</h1>
                                         <div class="text-center ">
                                             <a href="https://gojek.recruiterbox.com/jobs/fk0fowp?cjb_hash=O_tVhx60&apply_now=true&utm_source=gojek.io.website&utm_campaign=iOS%20Engineer"
                                                 target="_blank" class=" text-center btn bg-white text-green neosans-bold text-uppercase my-1 font-md challenging-button custom-btn">APPLY NOW </a>
@@ -1097,12 +1098,12 @@
                 <div class=" card border-0 mb-1 rounded-0">
                     <div class="card-body pb-0 row">
                         <h5 class="h4 col-md-4 text-black font-lg d-none d-md-block">Lead Software Engineer</h4>
-                            <button class="text-green btn btn-link col-md-4 font-lg d-md-none " href="../job-description/lead-software-engineer/index.html"
-                                data-toggle="modal" data-target="#lead-software-engineer">
+                            <button class="text-green btn btn-link col-md-4 font-lg d-md-none modal-btn" href="../job-description/lead-software-engineer/index.html"
+                                data-toggle="modal" data-modal-target="#lead-software-engineer">
                                 Lead Software Engineer
                             </button>
                             <p class=" col-md-4 font-xs-l text-lg-left text-center">Bangalore, Jakarta, Singapore</p>
-                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0" data-toggle="modal" data-target="#lead-software-engineer">
+                            <button class="btn btn-link text-green col-md-4 text-success text-right d-none d-md-block pt-0 modal-btn" data-toggle="modal" data-modal-target="#lead-software-engineer">
                                 Apply</button>
                     </div>
                 </div>
@@ -1527,58 +1528,74 @@
     <script type="text/javascript" src="../js/smooth-scroll.js"></script>
 
     <script>
-        // Smooth scroll initialization
-        var scroll = new SmoothScroll('a[href*="#"]');
 
+        $(document).ready(function () {
 
-        $(".go-jek-slider").slick({
-            dots: false,
-            infinite: true,
-            centerMode: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    arrows: true,
-                    centerMode: false,
-                    dots: true,
-                    slidesToShow: 1
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    dots: true,
-                    arrows: true,
-                    centerMode: false,
+            var hash = window.location.hash;
+            if (hash && hash !== "#viewPosition") {
+                $(hash).modal('toggle');
+            }
 
-                    slidesToShow: 1
-                }
-            }]
-        });
+            $('.modal-btn').click(function () {
+                var target = $(this).data('modal-target');
+                window.location.hash = target;
+                var hash = window.location.hash;
+                $(hash).modal('toggle')
+            });
 
-        $(".stories-slider").slick({
-            arrows: true,
-            centerMode: false,
-            centerPadding: '40px',
-            dots: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 769,
-                settings: {
-                    dots: false,
-                    centerMode: true,
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 577,
-                settings: {
-                    dots: true,
-                    slidesToShow: 1
-                }
-            }]
+            // Smooth scroll initialization
+            var scroll = new SmoothScroll('a[href*="#"]');
+
+            $(".go-jek-slider").slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        dots: true,
+                        slidesToShow: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        dots: true,
+                        arrows: true,
+                        centerMode: false,
+
+                        slidesToShow: 1
+                    }
+                }]
+            });
+
+            $(".stories-slider").slick({
+                arrows: true,
+                centerMode: false,
+                centerPadding: '40px',
+                dots: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        dots: false,
+                        centerMode: true,
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 577,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 1
+                    }
+                }]
+            });
+
         });
     </script>
 
