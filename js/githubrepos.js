@@ -9,7 +9,7 @@ function getGithubRepo(count, sliderBool) {
             var i, src;
             count === 12 ? src = '../img/sample-img-2.png' : src = 'img/';
 
-            console.log("data", data)
+
             for (i = 0; i < count; i++) {
                 if (sliderBool) {
                     if (data[i].name === "heimdall" || data[i].name === "palantir" || data[i].name === "proctor" || data[i].name === "valkyrie") {

@@ -46,6 +46,7 @@ body {
     font-family: "NeoSansBold", sans-serif;
 }
 
+
 /* .font-xs-s {
     font-size: 0.87rem;
 } */
@@ -53,6 +54,7 @@ body {
 .font-xs {
     font-size: 0.94rem;
 }
+
 
 /* .font-xs-l {
     font-size: 1rem;
@@ -161,11 +163,13 @@ footer .list-inline-item a {
     opacity: 0.5;
 }
 
+
 /* Navbar style */
 
 button.navbar-toggler {
     border: none;
 }
+
 
 /* Header Styles */
 
@@ -187,11 +191,13 @@ button.navbar-toggler {
     color: #8dc63f;
 }
 
+
 /* Homepage Mobile view carousel style */
 
 .first-section {
     margin-top: 53px;
 }
+
 
 /* Slider Styles*/
 
@@ -231,13 +237,21 @@ button.navbar-toggler {
 }
 
 .strikediag {
-    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 55.5%, transparent 52.25%);
-    color: orange;
-}
-
-/* .strike-text{
-      color: red;
-  } */
+    position: relative;
+   }
+.strikediag:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 3px solid orange;
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    transform:rotate(-20deg);
+   }
 
 /*Go-Jek facts*/
 
@@ -273,6 +287,7 @@ button.navbar-toggler {
     background-color: #f2f2f2;
 }
 
+
 /* .text-gray {
     color: #686868;
 } */
@@ -284,6 +299,7 @@ button.navbar-toggler {
 .numbers-card img {
     max-height: 200px;
 }
+
 
 /*Careers Page styles*/
 
@@ -310,7 +326,7 @@ button.navbar-toggler {
     font-size: 3rem;
 }
 
-.link-decoration:hover{
+.link-decoration:hover {
     text-decoration: none;
     color: white;
 }
@@ -326,6 +342,7 @@ button.navbar-toggler {
 .opensource-card {
     border-radius: 1rem;
 }
+
 
 /*Employee Stories Carousel*/
 
@@ -368,6 +385,7 @@ button.navbar-toggler {
     padding-top: 0;
 }
 
+
 /*Open source styles Start*/
 
 .opensource-card-title,
@@ -382,7 +400,9 @@ button.navbar-toggler {
     -webkit-line-clamp: 2;
 }
 
+
 /*open source styles End*/
+
 
 /* Tech stack */
 
@@ -391,9 +411,8 @@ button.navbar-toggler {
     display: block;
 }
 
+
 /* blog style start */
-
-
 
 .medium-blog em,
 .card-body,
@@ -403,7 +422,7 @@ button.navbar-toggler {
 }
 
 .medium-blog a:hover,
-    {
+{
     text-decoration: none;
 }
 
@@ -412,12 +431,12 @@ button.navbar-toggler {
 }
 
 
-
 /* Responsive text */
 
 html {
     font-size: 1rem;
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -440,9 +459,9 @@ html {
         bottom: 0;
         left: 16%;
     }
-    .blog-card-img{
+    .blog-card-img {
         min-height: 170px;
-        }
+    }
     .absolute-caption {
         position: absolute;
         bottom: 35%;
@@ -463,6 +482,7 @@ html {
         font-size: 18px;
     }
 }
+
 
 /*  Medium devices (tablets, 768px and up) */
 
@@ -491,9 +511,9 @@ html {
     .about-us-container-height {
         height: 1300px;
     }
-    .blog-card-img{
+    .blog-card-img {
         min-height: 150px;
-        }
+    }
     .emp-testimonial {
         font-size: 0.8rem;
     }
@@ -541,28 +561,23 @@ html {
     .about-us-container-height {
         height: 1650px;
     }
-
-    .blog-card-img{
+    .blog-card-img {
         min-height: 220px;
-        }
-
+    }
     #go-jek-slider .carousel-item .carousel-caption {
         top: 34%;
         right: 30%;
     }
-
     #go-jek-slider .homepage-carousel-indicators {
         top: 60%;
         right: 10%;
     }
-
     #go-jek-slider .carousel-btn {
         top: 66%;
         left: 11%;
         font-family: "NeoSansBold";
         z-index: 99;
     }
-
     .emp-testimonial {
         font-size: 1rem;
     }
@@ -571,6 +586,7 @@ html {
         max-width: 1000px;
     }
 }
+
 
 /*  Extra large devices (large desktops, 1200px and up) */
 
@@ -603,7 +619,7 @@ html {
     .about-us-container-height {
         height: 1950px;
     }
-    .blog-card-img{
+    .blog-card-img {
         min-height: 220px;
         }
 
@@ -615,6 +631,7 @@ html {
 li {
     color: green;
 }
+
 
 /* About-us */
 
@@ -637,6 +654,7 @@ li {
     stroke-miterlimit: 10;
     stroke-width: 14px;
 }
+
 
 /* .transition-effect {
     display: none;
