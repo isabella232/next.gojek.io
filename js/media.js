@@ -57,7 +57,7 @@ function getMediumBlogs(count, sliderBool) {
           item.title + '">';
         output += '<div class="card-body px-0 text-center text-md-left text-black">';
         output +=
-          '<h5 class="card-title  neosans-bold"><a class="text-dark  font-lg " target = "_blank" href="' +
+          '<h5 class="card-title  neosans-bold"><a class="text-dark  font-lg transparent-outline-link" target = "_blank" href="' +
           item.link +
           '">' +
           item.title +

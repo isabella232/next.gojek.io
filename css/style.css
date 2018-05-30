@@ -237,6 +237,7 @@ button.navbar-toggler {
 }
 
 .strikediag {
+    opacity: 0;
     position: relative;
 }
 
@@ -436,6 +437,9 @@ button.navbar-toggler {
     color: #009944;
 }
 
+.transparent-outline-link{
+    outline: transparent;
+}
 
 /* Responsive text */
 
@@ -466,7 +470,7 @@ html {
         left: 16%;
     }
     .blog-card-img {
-        min-height: 170px;
+        min-height: 140px;
     }
     .absolute-caption {
         position: absolute;
@@ -522,7 +526,8 @@ html {
         height: 1300px;
     }
     .blog-card-img {
-        min-height: 150px;
+        height: 120px;
+        object-fit: cover;
     }
     .emp-testimonial {
         font-size: 0.8rem;
@@ -580,7 +585,7 @@ html {
         height: 1650px;
     }
     .blog-card-img {
-        min-height: 180px;
+        min-height: 140px;
     }
     .emp-testimonial {
         font-size: 1rem;
@@ -635,7 +640,7 @@ html {
         height: 1950px;
     }
     .blog-card-img {
-        min-height: 220px;
+        min-height: 170px;
     }
     .careers-modal {
         max-width: 1000px;
