@@ -46,6 +46,7 @@ body {
     font-family: "NeoSansBold", sans-serif;
 }
 
+
 /* .font-xs-s {
     font-size: 0.87rem;
 } */
@@ -53,6 +54,7 @@ body {
 .font-xs {
     font-size: 0.94rem;
 }
+
 
 /* .font-xs-l {
     font-size: 1rem;
@@ -119,10 +121,6 @@ body {
     color: #009944;
 }
 
-.opensource-card img {
-    max-width: 132px;
-}
-
 .custom-btn {
     border-radius: 0.5rem;
     font-size: 1.31rem;
@@ -130,7 +128,7 @@ body {
     width: 16rem;
 }
 
-.green-apply-btn{
+.green-apply-btn {
     padding-top: 7.25px;
     padding-bottom: 5.25px;
 }
@@ -161,11 +159,13 @@ footer .list-inline-item a {
     opacity: 0.5;
 }
 
+
 /* Navbar style */
 
 button.navbar-toggler {
     border: none;
 }
+
 
 /* Header Styles */
 
@@ -187,11 +187,13 @@ button.navbar-toggler {
     color: #8dc63f;
 }
 
+
 /* Homepage Mobile view carousel style */
 
 .first-section {
     margin-top: 53px;
 }
+
 
 /* Slider Styles*/
 
@@ -226,20 +228,35 @@ button.navbar-toggler {
 }
 
 .carousel-btn .btn {
-    
     letter-spacing: 1.5px;
     font-size: 1rem;
 }
 
 .strikediag {
-    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+    opacity: 0;
+    position: relative;
 }
 
-/* .strike-text{
-      color: red;
-  } */
+.strikediag:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 3px solid orange;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
 
 /*Go-Jek facts*/
+
+.custom-line-height {
+    line-height: 24px;
+}
 
 .dark-green-bg {
     background-color: #02853c;
@@ -273,6 +290,7 @@ button.navbar-toggler {
     background-color: #f2f2f2;
 }
 
+
 /* .text-gray {
     color: #686868;
 } */
@@ -284,6 +302,7 @@ button.navbar-toggler {
 .numbers-card img {
     max-height: 200px;
 }
+
 
 /*Careers Page styles*/
 
@@ -310,6 +329,11 @@ button.navbar-toggler {
     font-size: 3rem;
 }
 
+.link-decoration:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .strike-text {
     color: red;
 }
@@ -321,6 +345,7 @@ button.navbar-toggler {
 .opensource-card {
     border-radius: 1rem;
 }
+
 
 /*Employee Stories Carousel*/
 
@@ -363,21 +388,12 @@ button.navbar-toggler {
     padding-top: 0;
 }
 
+
 /*Open source styles Start*/
 
-.opensource-card-title,
-.opensource-card-description {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-}
-
-.opensource-card-description {
-    -webkit-line-clamp: 2;
-}
 
 /*open source styles End*/
+
 
 /* Tech stack */
 
@@ -385,6 +401,7 @@ button.navbar-toggler {
     width: 100px;
     display: block;
 }
+
 
 /* blog style start */
 
@@ -396,7 +413,7 @@ button.navbar-toggler {
 }
 
 .medium-blog a:hover,
-    {
+{
     text-decoration: none;
 }
 
@@ -404,31 +421,30 @@ button.navbar-toggler {
     color: #009944;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 800px) {
-    .emp-testimonial {
-        font-size: 0.6rem;
-    }
-    #go-jek-slider .carousel-item .carousel-caption {
-        top: 9%;
-        right: 30%;
-    }
-    #go-jek-slider .homepage-carousel-indicators {
-        top: 55%;
-    }
-    #carouselExampleIndicators .careers-carousel-indicators {
-        top: 50%;
-        right: 21%;
-    }
-    #go-jek-slider .carousel-btn {
-        top: 61%;
-        font-family: "NeoSansBold";
-        z-index: 99;
-    }
+.transparent-outline-link {
+    outline: transparent;
 }
 
-@media only screen and (max-width: 577px) {
+
+/* Responsive text */
+
+html {
+    font-size: 1rem;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575px) {
+    html {
+        font-size: 12px;
+    }
+    .first-section {
+        margin-top: 48px;
+    }
+    .about-us-container-height {
+        height: 1500px;
+    }
     .opensource-card img,
     .tech-stack img {
         max-width: 100px;
@@ -437,6 +453,9 @@ button.navbar-toggler {
         position: absolute;
         bottom: 0;
         left: 16%;
+    }
+    .blog-card-img {
+        min-height: 140px;
     }
     .absolute-caption {
         position: absolute;
@@ -457,27 +476,11 @@ button.navbar-toggler {
     #go-jek-slider .carousel-item .carousel-caption .font-xl {
         font-size: 18px;
     }
-}
-
-/* Responsive text */
-
-html {
-    font-size: 1rem;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-
-@media (max-width: 575px) {
-    html {
-        font-size: 12px;
-    }
-    .first-section {
-        margin-top: 48px;
-    }
-    .about-us-container-height {
-        height: 1500px;
+    #go-jek-slider .carousel-btn {
+        top: 75%;
     }
 }
+
 
 /*  Medium devices (tablets, 768px and up) */
 
@@ -506,12 +509,46 @@ html {
     .about-us-container-height {
         height: 1300px;
     }
+    .blog-card-img {
+        height: 120px;
+        object-fit: cover;
+    }
+    .emp-testimonial {
+        font-size: 0.8rem;
+    }
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 31%;
+        right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 71%;
+    }
+    #carouselExampleIndicators .careers-carousel-indicators {
+        top: 90%;
+        right: 20%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 76%;
+        font-family: "NeoSansBold";
+        z-index: 99;
+    }
+    .opensource-card img {
+        max-width: 100px;
+    }
 }
 
 @media (min-width: 1024px) {
-    #carouselExampleIndicators .careers-carousel-indicators {
-        top: 45%;
-        right: 23%;
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 40%;
+        right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 67%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 75%;
+        font-family: "NeoSansBold";
+        z-index: 99;
     }
     .second-path {
         position: absolute;
@@ -534,14 +571,39 @@ html {
     .about-us-container-height {
         height: 1650px;
     }
+    .blog-card-img {
+        min-height: 140px;
+    }
+    .emp-testimonial {
+        font-size: 1rem;
+    }
+    .careers-modal {
+        max-width: 1000px;
+    }
+    .opensource-card img {
+        max-width: 132px;
+    }
 }
+
 
 /*  Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
     #carouselExampleIndicators .careers-carousel-indicators {
-        top: 60%;
-        right: 25%;
+        top: 95%;
+        right: 20rem;
+    }
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 42%;
+        right: 30%;
+    }
+    #go-jek-slider .homepage-carousel-indicators {
+        top: 65%;
+    }
+    #go-jek-slider .carousel-btn {
+        top: 72%;
+        font-family: "NeoSansBold";
+        z-index: 99;
     }
     html {
         font-size: 16px;
@@ -567,11 +629,34 @@ html {
     .about-us-container-height {
         height: 1950px;
     }
+    .blog-card-img {
+        min-height: 170px;
+    }
+    .careers-modal {
+        max-width: 1000px;
+    }
+    .modal-lg {
+        max-width: 1200px;
+    }
+    .opensource-card img {
+        max-width: 132px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #go-jek-slider .carousel-item .carousel-caption {
+        top: 42%;
+        right: 30%;
+    }
+    .modal-lg {
+        max-width: 2000px;
+    }
 }
 
 li {
     color: green;
 }
+
 
 /* About-us */
 
@@ -595,7 +680,24 @@ li {
     stroke-width: 14px;
 }
 
-.transition-effect {
+
+/* .transition-effect {
+    display: none;
+} */
+
+.transition-effect1 {
+    display: none;
+}
+
+.transition-effect2 {
+    display: none;
+}
+
+.transition-effect3 {
+    display: none;
+}
+
+.transition-effect4 {
     display: none;
 }
 
@@ -631,3 +733,8 @@ li {
 .fade-right {
     display: none;
 }
+
+
+/* @media (min-width: 1440px) {
+   
+} */

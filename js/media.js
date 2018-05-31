@@ -51,13 +51,13 @@ function getMediumBlogs(count, sliderBool) {
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
         output +=
-          '<img style = "min-height:220px" class="card-img-top img-fluid" src="' +
+          '<img class="card-img-top img-fluid blog-card-img" src="' +
           src +
           '"alt="'+
           item.title + '">';
         output += '<div class="card-body px-0 text-center text-md-left text-black">';
         output +=
-          '<h5 class="card-title  neosans-bold"><a class="text-dark  font-lg " target = "_blank" href="' +
+          '<h5 class="card-title  neosans-bold"><a class="text-dark  font-lg transparent-outline-link" target = "_blank" href="' +
           item.link +
           '">' +
           item.title +
